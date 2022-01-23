@@ -116,7 +116,7 @@
     gap: 1.5em;
 }
 
-.card-no-primary-btns .card-buttons-container {
+.card-only-icons .card-buttons-container {
     visibility: hidden;
 }
 
@@ -141,7 +141,7 @@
     gap: 0.8em;
 }
 
-.card-no-secondary-btns .card-images-container {
+.card-only-buttons .card-images-container {
     visibility: hidden;
 }
 
@@ -150,5 +150,5 @@
 }
 
 .card-svg-icons:hover {
-    opacity: 0.5;
+    opacity: 0.6;
 }
