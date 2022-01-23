@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 1rem;
+}
+
+:root {
+    --primary-color: #2563eb;
+    --button-selection-color: #60a5fa;
+    --chips-container-color: #1e3a8a;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+    justify-items: center;
+    gap: 1em;
+}
+
+.website-card-vertical-container {
+    width: 20em;
+    max-width: 90vw;
+}
+
+.website-card-horizontal-container {
+    width: 20em;
+    max-width: 90vw;
+}
+
+.chips-container {
+}
+
+.website-chip-container {
+    width: 50em;
+    max-width: 90vw;
+}
