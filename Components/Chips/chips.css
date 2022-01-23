@@ -20,7 +20,7 @@
     border: 1px solid black;
     border-radius: 1.2em;
     padding: 0.2em 0.5em;
-    background-color: var(--button-selection-color);
+    background-color: var(--chip-color);
 
     /* flex - properties */
     display: flex;

@@ -10,6 +10,7 @@ body {
     --primary-color: #2563eb;
     --button-selection-color: #60a5fa;
     --chips-container-color: #1e3a8a;
+    --chip-color: #60a5fa;
 }
 
 .cards-container {
