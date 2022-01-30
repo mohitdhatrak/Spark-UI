@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /* Use margin 0 once all done for now for better visibility use margin 1*/
+    /* margin: 0; */
+    margin: 2em;
+}
+
+:root {
+    /* card CSS variables */
+    --card-box-shadow: none;
+    --card-hover-box-shadow: 0px 0px 20px 1px grey;
+    --card-bg-color: transparent; /* bg stands for background */
+    --card-border: 1px solid black;
+    --card-border-radius: 1em;
+    --card-image-border: 1px solid black;
+    --card-image-border-radius: 0.5em;
+    --card-image-text-overlay-color: white;
+    --card-primary-button-color: #1d4ed8;
+    --card-primary-button-bg-color: none; /* #bae6fd */
+    --card-primary-button-border: none;
+    --card-primary-button-border-radius: 0.6em;
+    --card-button-hover-border-radius: none;
+    --card-secondary-button-color: black; /* i.e. card-icon-color */
+    --card-secondary-button-bg-color: none; /* #e5e7eb */
+    --card-secondary-button-border: none;
+    --card-secondary-button-border-radius: 0.6em;
+    --card-button-hover-color: lightblue;
+    --card-icon-size: 1.4rem;
+    --card-badge-bg-color: #bae6fd;
+    --card-badge-border: 1px solid black;
+    --card-badge-border-radius: 0.5em;
+    --card-badge-color: black;
+    --card-button-focus-outline-color: #2563eb;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+    justify-items: center;
+    gap: 3em;
+}
+
+.website-card-vertical-container {
+    width: 23em;
+    max-width: 90vw;
+}
+
+.website-card-horizontal-container {
+    width: 23em;
+    max-width: 90vw;
+}
