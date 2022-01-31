@@ -3,40 +3,251 @@
 }
 
 body {
-    /* Use margin 0 once all done for now for better visibility use margin 1*/
-    /* margin: 0; */
-    margin: 2em;
+    margin: 0;
+    /* margin: 2em; */
 }
 
 :root {
-    /* card CSS variables */
-    --card-box-shadow: none;
-    --card-hover-box-shadow: 0px 0px 20px 1px grey;
-    --card-bg-color: transparent; /* bg stands for background */
-    --card-border: 1px solid black;
-    --card-border-radius: 1em;
-    --card-image-border: 1px solid black;
-    --card-image-border-radius: 0.5em;
-    --card-image-text-overlay-color: white;
-    --card-primary-button-color: #1d4ed8;
-    --card-primary-button-bg-color: none; /* #bae6fd */
-    --card-primary-button-border: none;
-    --card-primary-button-border-radius: 0.6em;
-    --card-button-hover-border-radius: none;
-    --card-secondary-button-color: black; /* i.e. card-icon-color */
-    --card-secondary-button-bg-color: none; /* #e5e7eb */
-    --card-secondary-button-border: none;
-    --card-secondary-button-border-radius: 0.6em;
-    --card-button-hover-color: lightblue;
-    --card-icon-size: 1.4rem;
-    --card-badge-bg-color: #bae6fd;
-    --card-badge-border: 1px solid black;
-    --card-badge-border-radius: 0.5em;
-    --card-badge-color: black;
-    --card-button-focus-outline-color: #2563eb;
+    /* website top nav bar CSS variables */
+    --header-bg-color: #bae6fd;
+    --header-border: none;
+    --header-border-radius: 0;
+    --header-link-hover-color: #7dd3fc;
+    --header-link-hover-border-radius: 1em;
+    --header-link-focus-outline-color: white;
+
+    /* docs left nav bar CSS variables */
+    /* --drawer-height: 88vh; height issue */
+    --drawer-border-right: 2px solid #e0f2fe;
+    --drawer-bg-color: transparent;
+    --drawer-link-hover-color: #e0f2fe;
+    --drawer-link-focus-outline-color: black;
 }
 
-.cards-container {
+/* website top navigation bar */
+
+.landing-header {
+    background-color: var(--header-bg-color);
+    border: var(--header-border);
+    border-radius: var(--header-border-radius);
+    padding: 0.8em 0;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+    /* flex - properties */
+    display: flex;
+    gap: 1.5em;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.landing-header-link {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin: 0 0.8em;
+    padding: 0.5em;
+
+    /* flex - properties */
+    display: flex;
+    align-items: center;
+    gap: 0.8em;
+}
+
+.landing-header-link:nth-child(2):hover {
+    background-color: var(--header-link-hover-color);
+    border-radius: var(--header-link-hover-border-radius);
+}
+
+.landing-header-link:focus {
+    outline: var(--header-link-focus-outline-color) solid 2px;
+}
+
+.landing-svg-icon {
+    display: none !important;
+}
+
+@media screen and (max-width: 450px) {
+    .landing-header-link:nth-child(2) span {
+        display: none;
+    }
+
+    .landing-svg-icon {
+        display: block !important;
+        font-size: 1.5em !important;
+        color: #3b82f6;
+    }
+
+    .landing-header-logo {
+        display: none;
+    }
+}
+
+.landing-header-logo {
+    width: 2em !important;
+}
+
+.landing-header-title {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+/* landing page center content */
+
+.landing-main {
+    border-radius: 1em;
+    margin: 6% auto;
+    width: max-content;
+    max-width: 90%;
+    padding: 1.2em;
+
+    /* flex - properties */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2em;
+}
+
+.landing-main-logo {
+    width: 12rem;
+}
+
+.landing-main-body {
+    width: 25rem;
+    max-width: 100%;
+
+    /* flex - properties */
+    display: flex;
+    flex-direction: column;
+    gap: 1.2em;
+}
+
+.landing-main-text {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.landing-button-container {
+    /* flex - properties */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.landing-main-link {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 0.5em 0;
+    border-radius: 1.5em;
+    width: 10rem;
+    text-align: center;
+}
+
+.landing-main-link:nth-child(1) {
+    background-color: #bae6fd;
+}
+
+.landing-main-link:nth-child(2) {
+    border: 2px solid #bae6fd;
+}
+
+.landing-main-link:nth-child(1):focus {
+    outline: black solid 2px;
+}
+
+.landing-main-link:nth-child(2):focus {
+    outline: #bae6fd solid 2px;
+}
+
+/* docs left nav bar */
+
+.docs-body-container {
+    position: fixed;
+    top: 6.1em;
+    overflow-y: auto;
+
+    /* flex - properties */
+    display: flex;
+}
+
+.drawer {
+    border-right: var(--drawer-border-right);
+    padding: 1.2em;
+    padding-left: 3rem;
+    /* padding-bottom: 0.5em; */
+    width: 14rem;
+    height: 100%;
+    overflow-y: auto;
+    background-color: var(--drawer-bg-color);
+    /* position: sticky;
+    top: 6.1em; */
+}
+
+.drawer.drawer-scroll {
+    height: var(--drawer-height);
+}
+
+.nested-drawer-title {
+    margin: 0;
+    font-size: 1.2rem;
+    background-color: transparent;
+    border: none;
+    width: 95%;
+    position: relative;
+
+    /* flex - properties */
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.drawer-links-container {
+    /* flex - properties */
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+}
+
+.drawer-link {
+    padding: 0.2em 0.5em;
+    margin: 0 0.6em;
+    font-size: 1.2rem;
+    border-radius: 0.5em;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    width: 95%;
+
+    /* flex - properties */
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.drawer-link:focus {
+    outline: var(--drawer-link-focus-outline-color) solid 2px;
+}
+
+.drawer-link:hover {
+    background-color: var(--drawer-link-hover-color);
+}
+
+.nested-drawer {
+    padding-top: 0.4em;
+    /* padding-left: 2em; */
+}
+
+/* website card component section */
+
+.website-cards-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
     justify-items: center;
