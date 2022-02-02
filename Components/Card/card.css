@@ -13,22 +13,22 @@
     --card-image-border: 1px solid black;
     --card-image-border-radius: 0.5em;
     --card-image-text-overlay-color: white;
-    --card-primary-button-color: #1d4ed8;
-    --card-primary-button-bg-color: none; /* #bae6fd */
+    --card-primary-button-color: black;
+    --card-primary-button-bg-color: #bae6fd;
     --card-primary-button-border: none;
     --card-primary-button-border-radius: 0.6em;
     --card-button-hover-border-radius: none;
-    --card-secondary-button-color: black; /* i.e. card-icon-color */
-    --card-secondary-button-bg-color: none; /* #e5e7eb */
+    --card-secondary-button-color: black; /* i.e. card icon buttons */
+    --card-secondary-button-bg-color: none;
     --card-secondary-button-border: none;
     --card-secondary-button-border-radius: 0.6em;
-    --card-button-hover-color: lightblue;
+    --card-button-hover-color: #7dd3fc;
     --card-icon-size: 1.4rem;
     --card-badge-bg-color: #bae6fd;
     --card-badge-border: 1px solid black;
     --card-badge-border-radius: 0.5em;
     --card-badge-color: black;
-    --card-button-focus-outline-color: #2563eb;
+    --card-button-focus-outline-color: #3b82f6; /* focus color is seen when you use tab key to access buttons or links*/
 }
 
 .card {
@@ -200,6 +200,7 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    gap: 1em;
 }
 
 .card-horizontal .card-footer {
@@ -217,7 +218,7 @@
 
 .card-primary-buttons-container {
     display: flex;
-    gap: 0.5em;
+    gap: 0.8em;
 }
 
 .card-only-icons .card-primary-buttons-container {
