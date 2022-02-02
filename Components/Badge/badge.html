@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Spark UI</title>
+        <link
+            rel="shortcut icon"
+            href="/Images/spark-ui-favicon.png"
+            type="image/png"
+        />
+        <link rel="stylesheet" href="/Components/Badge/badge.css" />
+        <link rel="stylesheet" href="/main.css" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        />
+    </head>
+    <body>
+        <!-- 3 different badges 3 different html, but for 3 size types use classes - badge-small, badge-medium, badge-large -->
+
+        <!-- header same as landing page -->
+        <nav aria-label="Top bar" class="landing-header">
+            <a href="/index.html" class="landing-header-link">
+                <img
+                    src="/Images/spark-ui-logo.png"
+                    alt="Website Logo"
+                    class="landing-header-logo"
+                />
+                <span class="landing-header-title">Spark UI</span>
+            </a>
+            <a
+                href="https://mohitdhatrak.bio.link/"
+                target="_blank"
+                class="landing-header-link"
+            >
+                <span>Let's Connect</span>
+                <i class="material-icons landing-svg-icon">public</i>
+            </a>
+        </nav>
+
+        <div class="docs-body-container">
+            <div class="side-nav-container">
+                <aside aria-label="Mail menu" class="drawer drawer-scroll">
+                    <h3 class="nested-drawer-title">Getting Started</h3>
+                    <div class="drawer-links-container nested-drawer">
+                        <a href="/docs.html" class="drawer-link">Usage</a>
+                    </div>
+                    <br />
+                    <h3 class="nested-drawer-title">Components</h3>
+                    <div class="drawer-links-container nested-drawer">
+                        <a
+                            href="/Components/Avatar/avatar.html"
+                            class="drawer-link"
+                            >Avatar</a
+                        >
+                        <a
+                            href="/Components/Alert/alert.html"
+                            class="drawer-link"
+                            >Alert</a
+                        >
+                        <a
+                            href="/Components/Badge/badge.html"
+                            class="drawer-link"
+                            >Badge</a
+                        >
+                        <a
+                            href="/Components/Button/button.html"
+                            class="drawer-link"
+                            >Button</a
+                        >
+                        <a href="/Components/Card/card.html" class="drawer-link"
+                            >Card</a
+                        >
+                        <a
+                            href="/Components/Image/image.html"
+                            class="drawer-link"
+                            >Image</a
+                        >
+                        <a
+                            href="/Components/Input/input.html"
+                            class="drawer-link"
+                            >Input</a
+                        >
+                    </div>
+                </aside>
+            </div>
+
+            <div>
+                <div class="component-content-container">
+                    <div class="component-nav-container">
+                        <a
+                            href="/Components/Alert/alert.html"
+                            class="component-nav-link"
+                        >
+                            <i class="material-icons component-nav-arrow">
+                                arrow_left
+                            </i>
+                            <span>Alert</span>
+                        </a>
+                        <a
+                            href="/Components/Button/button.html"
+                            class="component-nav-link"
+                        >
+                            <span>Button</span
+                            ><i class="material-icons component-nav-arrow">
+                                arrow_right
+                            </i>
+                        </a>
+                    </div>
+
+                    <h1 class="component-heading">Badge</h1>
+
+                    <h3 class="component-subheading">
+                        Badge component CSS import url
+                    </h3>
+                    <iframe
+                        src="https://www.thiscodeworks.com/embed/61faf1cdb783be0015bbaf77"
+                        style="
+                            width: 54rem;
+                            height: 6.875rem;
+                            margin: 1em 0;
+                            max-width: 100%;
+                        "
+                        frameborder="0"
+                    ></iframe>
+
+                    <h3 class="component-subheading">
+                        Badge component CSS HTML link tag
+                    </h3>
+                    <iframe
+                        src="https://www.thiscodeworks.com/embed/61faf215b783be0015bbaf7a"
+                        style="
+                            width: 54rem;
+                            height: 6.875rem;
+                            margin: 1em 0;
+                            max-width: 100%;
+                        "
+                        frameborder="0"
+                    ></iframe>
+
+                    <h2 class="component-subheading">
+                        How to modify component as per need !
+                    </h2>
+                    <p class="component-text">
+                        All available badge types have some default properties
+                        like background-colour, colour, border, etc. For
+                        changing colours, borders, just use the given
+                        css-variables below in
+                        <span class="code-highlight">:root</span> selector of
+                        your CSS file. As for the choice in sizes, there are 3
+                        options available for each, how to access them is given
+                        below. No need to use these variables if you wish to use
+                        the badge as it is.
+                    </p>
+                    <iframe
+                        src="https://www.thiscodeworks.com/embed/61fb0301b783be0015bbafbc"
+                        style="
+                            width: 54rem;
+                            height: 19.55rem;
+                            margin: 1em 0;
+                            max-width: 100%;
+                        "
+                        frameborder="0"
+                    ></iframe>
+
+                    <h2 class="component-subheading">1. Text with a badge</h2>
+                    <div class="website-badge-container">
+                        <div class="text-with-badge badge-small">
+                            <p class="badge-text">New Year Sale</p>
+                            <div class="badge-badge1">60% off</div>
+                        </div>
+                    </div>
+                    <div class="website-badge-container">
+                        <div class="text-with-badge badge-medium">
+                            <p class="badge-text">New Year Sale</p>
+                            <div class="badge-badge1">60% off</div>
+                        </div>
+                    </div>
+                    <div class="website-badge-container">
+                        <div class="text-with-badge badge-large">
+                            <p class="badge-text">New Year Sale</p>
+                            <div class="badge-badge1">60% off</div>
+                        </div>
+                    </div>
+                    <br />
+                    <p class="component-text">
+                        All 3 sizes have the same HTML code given below. The
+                        given HTML code is for the medium size, therefore the
+                        class used in outermost
+                        <span class="code-highlight"> &lt; div &gt; </span> is
+                        <span class="code-highlight">badge-medium</span>. To use
+                        the small size, replace class
+                        <span class="code-highlight">badge-medium</span> with
+                        <span class="code-highlight">badge-small</span>. To use
+                        the large size, replace with
+                        <span class="code-highlight">badge-large</span>.
+                    </p>
+                    <iframe
+                        src="https://www.thiscodeworks.com/embed/61faf4b3b783be0015bbaf86"
+                        style="
+                            width: 54rem;
+                            height: 9.325rem;
+                            margin: 1em 0;
+                            max-width: 100%;
+                        "
+                        frameborder="0"
+                    ></iframe>
+
+                    <h2 class="component-subheading">2. Button with a badge</h2>
+                    <div class="website-badge-container">
+                        <div class="button-with-badge badge-small">
+                            <button class="badge-button">Comments</button>
+                            <div class="badge-badge2">28</div>
+                        </div>
+                    </div>
+                    <div class="website-badge-container">
+                        <div class="button-with-badge badge-medium">
+                            <button class="badge-button">Comments</button>
+                            <div class="badge-badge2">28</div>
+                        </div>
+                    </div>
+                    <div class="website-badge-container">
+                        <div class="button-with-badge badge-large">
+                            <button class="badge-button">Comments</button>
+                            <div class="badge-badge2">28</div>
+                        </div>
+                    </div>
+                    <br />
+                    <p class="component-text">
+                        All 3 sizes have the same HTML code given below. The
+                        given HTML code is for the medium size, therefore the
+                        class used in outermost
+                        <span class="code-highlight"> &lt; div &gt; </span> is
+                        <span class="code-highlight">badge-medium</span>. To use
+                        the small size, replace class
+                        <span class="code-highlight">badge-medium</span> with
+                        <span class="code-highlight">badge-small</span>. To use
+                        the large size, replace with
+                        <span class="code-highlight">badge-large</span>.
+                    </p>
+                    <iframe
+                        src="https://www.thiscodeworks.com/embed/61fafa0bb783be0015bbaf99"
+                        style="
+                            width: 54rem;
+                            height: 9.325rem;
+                            margin: 1em 0;
+                            max-width: 100%;
+                        "
+                        frameborder="0"
+                    ></iframe>
+
+                    <h2 class="component-subheading">3. Icon with a badge</h2>
+                    <div class="website-badge-container">
+                        <div class="icon-with-badge badge-small">
+                            <button class="badge-icon-button">
+                                <i class="material-icons badge-icon"
+                                    >whatsapp</i
+                                >
+                            </button>
+                            <div class="badge-badge3">62</div>
+                        </div>
+                    </div>
+                    <div class="website-badge-container">
+                        <div class="icon-with-badge badge-medium">
+                            <button class="badge-icon-button">
+                                <i class="material-icons badge-icon"
+                                    >whatsapp</i
+                                >
+                            </button>
+                            <div class="badge-badge3">62</div>
+                        </div>
+                    </div>
+                    <div class="website-badge-container">
+                        <div class="icon-with-badge badge-large">
+                            <button class="badge-icon-button">
+                                <i class="material-icons badge-icon"
+                                    >whatsapp</i
+                                >
+                            </button>
+                            <div class="badge-badge3">62</div>
+                        </div>
+                    </div>
+                    <br />
+                    <p class="component-text">
+                        All 3 sizes have the same HTML code given below. The
+                        given HTML code is for the medium size, therefore the
+                        class used in outermost
+                        <span class="code-highlight"> &lt; div &gt; </span> is
+                        <span class="code-highlight">badge-medium</span>. To use
+                        the small size, replace class
+                        <span class="code-highlight">badge-medium</span> with
+                        <span class="code-highlight">badge-small</span>. To use
+                        the large size, replace with
+                        <span class="code-highlight">badge-large</span>.
+                    </p>
+                    <iframe
+                        src="https://www.thiscodeworks.com/embed/61fafcb6b783be0015bbafa3"
+                        style="
+                            width: 54rem;
+                            height: 11.05rem;
+                            margin: 1em 0;
+                            max-width: 100%;
+                        "
+                        frameborder="0"
+                    ></iframe>
+
+                    <div class="component-nav-container">
+                        <a
+                            href="/Components/Alert/alert.html"
+                            class="component-nav-link"
+                        >
+                            <i class="material-icons component-nav-arrow">
+                                arrow_left
+                            </i>
+                            <span>Alert</span>
+                        </a>
+                        <a
+                            href="/Components/Button/button.html"
+                            class="component-nav-link"
+                        >
+                            <span>Button</span
+                            ><i class="material-icons component-nav-arrow">
+                                arrow_right
+                            </i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

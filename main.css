@@ -386,3 +386,20 @@ h2.component-subheading {
     margin-bottom: 1.2rem;
     max-width: 100%;
 }
+
+/* website badge component section */
+
+.website-badge-container {
+    width: max-content;
+    margin: 2.4em 0;
+    margin-bottom: 1.2rem;
+    max-width: 100%;
+}
+
+/* website badge component section */
+
+.website-avatar-container {
+    display: inline;
+    width: max-content;
+    max-width: 100%;
+}

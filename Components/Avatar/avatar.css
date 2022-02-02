@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+    --avatar-size: 2em;
+    --avatar-border: none;
+}
+
+.avatar {
+    width: var(--avatar-size);
+    border: var(--avatar-border);
+    border-radius: 50%;
+    margin: 2.4rem 0.5rem;
+    margin-top: 1.2rem;
+}
+
+.avatar.avatar-extra-large {
+    width: 4em;
+}
+
+.avatar.avatar-large {
+    width: 3em;
+}
+
+.avatar.avatar-small {
+    width: 1.5em;
+}
+
+.avatar.avatar-extra-small {
+    width: 1em;
+}
