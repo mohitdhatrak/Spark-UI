@@ -409,10 +409,46 @@ h2.component-subheading {
     gap: 1.8em;
 }
 
-/* website badge component section */
+/* website avatar component section */
 
 .website-avatar-container {
     display: inline;
     width: max-content;
     max-width: 100%;
+}
+
+/* website alert component section */
+
+.website-alert-container {
+    width: 50em;
+    margin: 2.4em 0;
+    margin-bottom: 1.2rem;
+    max-width: 100%;
+}
+
+.website-alert {
+    width: 30rem;
+    max-width: 90%;
+    padding: 0.8em 1.2em;
+    padding-right: 0.6em;
+    background-color: var(--website-primary-color);
+    border-radius: 0.3em;
+
+    /* flex - properties */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1.5em;
+}
+.website-alert-success {
+    background-color: #d1e7dd;
+}
+
+.website-alert-error {
+    background-color: #f8d7da;
+}
+
+/* website button component section */
+
+.website-button-container {
 }

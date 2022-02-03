@@ -10,7 +10,7 @@
             href="/Images/spark-ui-favicon.png"
             type="image/png"
         />
-        <link rel="stylesheet" href="/Components/Avatar/avatar.css" />
+        <link rel="stylesheet" href="/Components/Button/button.css" />
         <link rel="stylesheet" href="/main.css" />
         <link
             rel="stylesheet"
@@ -88,30 +88,33 @@
             <div>
                 <div class="component-content-container">
                     <div class="component-nav-container">
-                        <a href="/docs.html" class="component-nav-link">
+                        <a
+                            href="/Components/Badge/badge.html"
+                            class="component-nav-link"
+                        >
                             <i class="material-icons component-nav-arrow">
                                 arrow_left
                             </i>
-                            <span>Usage</span>
+                            <span>Badge</span>
                         </a>
                         <a
-                            href="/Components/Alert/alert.html"
+                            href="/Components/Card/card.html"
                             class="component-nav-link"
                         >
-                            <span>Alert</span
+                            <span>Card</span
                             ><i class="material-icons component-nav-arrow">
                                 arrow_right
                             </i>
                         </a>
                     </div>
 
-                    <h1 class="component-heading">Avatar</h1>
+                    <h1 class="component-heading">Button</h1>
 
                     <h3 class="component-subheading">
-                        Avatar component CSS - import url
+                        Button component CSS - import url
                     </h3>
                     <iframe
-                        src="https://www.thiscodeworks.com/embed/61fb0718b783be0015bbafc0"
+                        src="https://www.thiscodeworks.com/embed/61fc01ee6ab14d0015c32d94"
                         style="
                             width: 54rem;
                             height: 6.875rem;
@@ -122,10 +125,10 @@
                     ></iframe>
 
                     <h3 class="component-subheading">
-                        Avatar component CSS - HTML link tag
+                        Button component CSS - HTML link tag
                     </h3>
                     <iframe
-                        src="https://www.thiscodeworks.com/embed/61fb076bb783be0015bbafc1"
+                        src="https://www.thiscodeworks.com/embed/61fc01656ab14d0015c32d91"
                         style="
                             width: 54rem;
                             height: 6.875rem;
@@ -139,80 +142,41 @@
                         How to modify component as per need !
                     </h2>
                     <p class="component-text">
-                        All available avatar types have no border by default.
-                        For adding borders, just use the given css-variable
-                        below in
+                        All available cards have some default width and other
+                        properties like colour, border, etc. All cards are
+                        responsive, to give width as per your convenience, just
+                        put the given html in a
+                        <span class="code-highlight"> &lt; div &gt; </span>
+                        and give that
+                        <span class="code-highlight"> &lt; div &gt; </span> the
+                        width you wish. For changing colours, borders,
+                        box-shadow, on hover-effects, icon-sizes, just use the
+                        given css-variables below in
                         <span class="code-highlight">:root</span> selector of
-                        your CSS file. As for the choice in sizes, there are 5
-                        options already available, how to access them is given
-                        below. If you want a size other than those, then use the
-                        given css-variable. No need to use these variables if
-                        you wish to use the avatars as it is.
+                        your CSS file. By default there is box-shadow effect on
+                        card hover. To get box-shadow even without hover, use
+                        given css-variable
+                        <span class="code-highlight">--card-box-shadow</span>.
+                        No need to use these variables if you wish to use the
+                        card as it is. For the given heart, share, more icons to
+                        work, you need to link the given google-icons stylesheet
+                        in your HTML too.
                     </p>
                     <iframe
-                        src="https://www.thiscodeworks.com/embed/61fb15b7b783be0015bbafc6"
+                        src="https://www.thiscodeworks.com/embed/61faa696b783be0015bbaef2"
                         style="
                             width: 54rem;
-                            height: 7.65rem;
+                            height: 27.18rem;
                             margin: 1em 0;
                             max-width: 100%;
                         "
                         frameborder="0"
                     ></iframe>
-
-                    <h2 class="component-subheading">Standard avatars</h2>
-                    <div class="website-avatar-container">
-                        <img
-                            src="/Images/avatar-image.webp"
-                            alt="Spark UI logo extra large"
-                            class="avatar avatar-extra-large"
-                        />
-                    </div>
-                    <div class="website-avatar-container">
-                        <img
-                            src="/Images/avatar-image.webp"
-                            alt="Spark UI logo large"
-                            class="avatar avatar-large"
-                        />
-                    </div>
-                    <div class="website-avatar-container">
-                        <img
-                            src="/Images/avatar-image.webp"
-                            alt="Spark UI logo medium"
-                            class="avatar avatar-medium"
-                        />
-                    </div>
-                    <div class="website-avatar-container">
-                        <img
-                            src="/Images/avatar-image.webp"
-                            alt="Spark UI logo small"
-                            class="avatar avatar-small"
-                        />
-                    </div>
-                    <div class="website-avatar-container">
-                        <img
-                            src="/Images/avatar-image.webp"
-                            alt="Spark UI logo extra small"
-                            class="avatar avatar-extra-small"
-                        />
-                    </div>
-                    <p class="component-text">
-                        All 5 sizes have the same HTML code given below. The
-                        given HTML code is for the medium size, therefore the
-                        class used is
-                        <span class="code-highlight">avatar-medium</span>. To
-                        use a larger size than medium, replace class
-                        <span class="code-highlight">avatar-medium</span> with
-                        <span class="code-highlight">avatar-large</span>. To use
-                        the largest size, replace class with
-                        <span class="code-highlight">avatar-extra-large</span>.
-                        To use a smaller size than medium, replace class with
-                        <span class="code-highlight">avatar-small</span>. To use
-                        the smallest size, replace class with
-                        <span class="code-highlight">avatar-extra-small</span>.
-                    </p>
+                    <h3 class="component-subheading">
+                        Google-icons CSS - HTML link tag
+                    </h3>
                     <iframe
-                        src="https://www.thiscodeworks.com/embed/61fb13cdb783be0015bbafc5"
+                        src="https://www.thiscodeworks.com/embed/61fbdefd6ab14d0015c32d68"
                         style="
                             width: 54rem;
                             height: 6.875rem;
@@ -223,17 +187,20 @@
                     ></iframe>
 
                     <div class="component-nav-container">
-                        <a href="/docs.html" class="component-nav-link">
+                        <a
+                            href="/Components/Badge/badge.html"
+                            class="component-nav-link"
+                        >
                             <i class="material-icons component-nav-arrow">
                                 arrow_left
                             </i>
-                            <span>Usage</span>
+                            <span>Badge</span>
                         </a>
                         <a
-                            href="/Components/Alert/alert.html"
+                            href="/Components/Card/card.html"
                             class="component-nav-link"
                         >
-                            <span>Alert</span
+                            <span>Card</span
                             ><i class="material-icons component-nav-arrow">
                                 arrow_right
                             </i>
