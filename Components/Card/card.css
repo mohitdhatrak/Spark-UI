@@ -89,7 +89,7 @@
     gap: 0.5em;
 }
 
-.card-horizontal > .card-body > .card-image-header-container > header {
+.card-horizontal .card-header-container {
     margin: 0 auto;
     margin-top: 0.5rem;
 }
@@ -113,27 +113,27 @@
     border-radius: var(--card-border-radius) 0 0 0;
 }
 
-.card-header-top > .card-body > .card-image-header-container > header {
+.card-header-top .card-header-container {
     margin-bottom: 0.7em;
     order: -1;
 }
 
-.card-text-overlay > .card-body > .card-image-header-container > header {
+.card-text-overlay .card-header-container {
     position: absolute;
     bottom: 1em;
     color: var(--card-image-text-overlay-color);
 }
 
-.card-vertical > .card-body > .card-image-header-container > header {
+.card-vertical .card-header-container {
     margin-top: 0.5em;
 }
 
-.card-with-badge > .card-body > .card-image-header-container > header {
+.card-with-badge .card-header-container {
     width: 90%;
     margin: 0 auto;
 }
 
-.card-with-dismiss > .card-body > .card-image-header-container > header {
+.card-with-dismiss .card-header-container {
     width: 90%;
     margin: 0 auto;
 }
