@@ -396,6 +396,19 @@ h2.component-subheading {
     max-width: 100%;
 }
 
+.website-inline-badge-container {
+    width: max-content;
+    margin: 2.4em 0;
+    margin-bottom: 1.8rem;
+    max-width: 100%;
+
+    /* flex - properties */
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 1.8em;
+}
+
 /* website badge component section */
 
 .website-avatar-container {
