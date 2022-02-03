@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Spark UI</title>
+        <link rel="stylesheet" href="/Components/Card/card.css" />
+        <link rel="stylesheet" href="/main.css" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        />
+    </head>
+    <body>
+        <!-- olympics 7 cards have same html, last 2 have different html each -->
+        <!-- to get different cards, same html, use any 1 of the classes - 'card-vertical card-basic', 'card-vertical card-header-top', 'card-vertical card-only-icons', 'card-vertical card-only-buttons', 'card-vertical card-text-overlay', 'card-vertical card-only-text',  'card-horizontal card-basic', 'card-vertical card-with-badge', 'card-vertical card-with-dismiss'-->
+
+        <!-- header same as landing page -->
+        <nav aria-label="Top bar" class="landing-header">
+            <a href="/index.html" class="landing-header-link">
+                <img
+                    src="/Images/spark-ui-logo.png"
+                    alt="Website Logo"
+                    class="landing-header-logo"
+                />
+                <span class="landing-header-title">Spark UI</span>
+            </a>
+            <a
+                href="https://mohitdhatrak.bio.link/"
+                target="_blank"
+                class="landing-header-link"
+            >
+                <span>Let's Connect</span>
+                <i class="material-icons landing-svg-icon">public</i>
+            </a>
+        </nav>
+
+        <div class="docs-body-container">
+            <div class="side-nav-container">
+                <aside aria-label="Mail menu" class="drawer drawer-scroll">
+                    <h3 class="nested-drawer-title">Getting Started</h3>
+                    <div class="drawer-links-container nested-drawer">
+                        <a href="/docs.html" class="drawer-link">Usage</a>
+                    </div>
+                    <br />
+                    <h3 class="nested-drawer-title">Components</h3>
+                    <div class="drawer-links-container nested-drawer">
+                        <a
+                            href="/Components/Avatar/avatar.html"
+                            class="drawer-link"
+                            >Avatar</a
+                        >
+                        <a
+                            href="/Components/Alert/alert.html"
+                            class="drawer-link"
+                            >Alert</a
+                        >
+                        <a
+                            href="/Components/Badge/badge.html"
+                            class="drawer-link"
+                            >Badge</a
+                        >
+                        <a
+                            href="/Components/Button/button.html"
+                            class="drawer-link"
+                            >Button</a
+                        >
+                        <a href="/Components/Card/card.html" class="drawer-link"
+                            >Card</a
+                        >
+                        <a
+                            href="/Components/Image/image.html"
+                            class="drawer-link"
+                            >Image</a
+                        >
+                        <a
+                            href="/Components/Input/input.html"
+                            class="drawer-link"
+                            >Input</a
+                        >
+                    </div>
+                </aside>
+            </div>
+
+            <div>
+                <div class="component-content-container">
+                    <div class="component-nav-container">
+                        <a
+                            href="/Components/Button/button.html"
+                            class="component-nav-link"
+                        >
+                            <i class="material-icons component-nav-arrow">
+                                arrow_left
+                            </i>
+                            <span>Button</span>
+                        </a>
+                        <a
+                            href="/Components/Image/image.html"
+                            class="component-nav-link"
+                        >
+                            <span>Image</span
+                            ><i class="material-icons component-nav-arrow">
+                                arrow_right
+                            </i>
+                        </a>
+                    </div>
+
+                    <h1 class="component-heading">Card</h1>
+
+                    <h3 class="component-subheading">
+                        Card component CSS import url
+                    </h3>
+                    <iframe
+                        src="https://www.thiscodeworks.com/embed/61fa8dc6b783be0015bbaec6"
+                        style="
+                            width: 54rem;
+                            height: 6.875rem;
+                            margin: 1em 0;
+                            max-width: 100%;
+                        "
+                        frameborder="0"
+                    ></iframe>
+
+                    <h3 class="component-subheading">
+                        Card component CSS HTML link tag
+                    </h3>
+                    <iframe
+                        src="https://www.thiscodeworks.com/embed/61fa92c9b783be0015bbaecb"
+                        style="
+                            width: 54rem;
+                            height: 6.875rem;
+                            margin: 1em 0;
+                            max-width: 100%;
+                        "
+                        frameborder="0"
+                    ></iframe>
+
+                    <h2 class="component-subheading">
+                        How to modify component as per need !
+                    </h2>
+                    <p class="component-text">
+                        All available cards have some default width and other
+                        properties like colour, border, etc. All cards are
+                        responsive, to give width as per your convenience, just
+                        put the given html in a
+                        <span class="code-highlight"> &lt; div &gt; </span>
+                        and give that
+                        <span class="code-highlight"> &lt; div &gt; </span> the
+                        width you wish. For changing colours, borders,
+                        box-shadow, on hover-effects, icon-sizes, just use the
+                        given css-variables below in
+                        <span class="code-highlight">:root</span> selector of
+                        your CSS file. By default there is box-shadow effect on
+                        card hover. To get box-shadow even without hover, use
+                        given css-variable
+                        <span class="code-highlight">--card-box-shadow</span>.
+                        No need to use these if you wish to use the card as it
+                        is.
+                    </p>
+                    <iframe
+                        src="https://www.thiscodeworks.com/embed/61faa696b783be0015bbaef2"
+                        style="
+                            width: 54rem;
+                            height: 27.18rem;
+                            margin: 1em 0;
+                            max-width: 100%;
+                        "
+                        frameborder="0"
+                    ></iframe>
+
+                    <h2 class="component-subheading">1. Basic vertical card</h2>
+                    <div class="website-card-vertical-container">
+                        <div class="card card-vertical card-basic">
+                            <div class="card-body">
+                                <div class="card-image-header-container">
+                                    <img
+                                        src="/Images/demo-image.png"
+                                        alt="Tokyo Olympics"
+                                        class="card-image"
+                                    />
+                                    <header class="card-header-container">
+                                        <h1 class="card-heading">
+                                            Tokyo Olympics 2020
+                                        </h1>
+                                        <p class="card-subheading">
+                                            by Mohit Dhatrak
+                                        </p>
+                                    </header>
+                                </div>
+                                <p class="card-text">
+                                    The Tokyo 2020 Games were an unprecedented
+                                    demonstration of unity and solidarity as the
+                                    world came together for the first time
+                                    following the onset of the COVID-19, for an
+                                    Olympic Games focused on the pure
+                                    essentials: a celebration of athletes and
+                                    sport.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="card-primary-buttons-container">
+                                    <button class="card-button">Read</button>
+                                    <button class="card-button">
+                                        Bookmark
+                                    </button>
+                                </div>
+                                <div class="card-secondary-buttons-container">
+                                    <button class="card-button">
+                                        <i
+                                            class="material-icons card-svg-icons"
+                                        >
+                                            favorite_border
+                                        </i>
+                                    </button>
+                                    <button class="card-button">
+                                        <i
+                                            class="material-icons card-svg-icons"
+                                        >
+                                            share
+                                        </i>
+                                    </button>
+                                    <button class="card-button">
+                                        <i
+                                            class="material-icons card-svg-icons"
+                                        >
+                                            more_vert
+                                        </i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <iframe
+                        src="https://www.thiscodeworks.com/embed/61f97e951e1df40015379460"
+                        style="
+                            width: 54rem;
+                            height: 40.8rem;
+                            margin: 1em 0;
+                            max-width: 100%;
+                        "
+                        frameborder="0"
+                    ></iframe>
+
+                    <h2 class="component-subheading">
+                        2. Basic vertical card with header
+                    </h2>
+                    <div class="website-card-vertical-container">
+                        <div class="card card-vertical card-header-top">
+                            <div class="card-body">
+                                <div class="card-image-header-container">
+                                    <img
+                                        src="/Images/demo-image.png"
+                                        alt="Tokyo Olympics"
+                                        class="card-image"
+                                    />
+                                    <header class="card-header-container">
+                                        <h1 class="card-heading">
+                                            Tokyo Olympics 2020
+                                        </h1>
+                                        <p class="card-subheading">
+                                            by Mohit Dhatrak
+                                        </p>
+                                    </header>
+                                </div>
+                                <p class="card-text">
+                                    The Tokyo 2020 Games were an unprecedented
+                                    demonstration of unity and solidarity as the
+                                    world came together for the first time
+                                    following the onset of the COVID-19, for an
+                                    Olympic Games focused on the pure
+                                    essentials: a celebration of athletes and
+                                    sport.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="card-primary-buttons-container">
+                                    <button class="card-button">Read</button>
+                                    <button class="card-button">
+                                        Bookmark
+                                    </button>
+                                </div>
+                                <div class="card-secondary-buttons-container">
+                                    <button class="card-button">
+                                        <i
+                                            class="material-icons card-svg-icons"
+                                        >
+                                            favorite_border
+                                        </i>
+                                    </button>
+                                    <button class="card-button">
+                                        <i
+                                            class="material-icons card-svg-icons"
+                                        >
+                                            share
+                                        </i>
+                                    </button>
+                                    <button class="card-button">
+                                        <i
+                                            class="material-icons card-svg-icons"
+                                        >
+                                            more_vert
+                                        </i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <iframe
+                        src="https://www.thiscodeworks.com/embed/61faa06fb783be0015bbaeeb"
+                        style="
+                            width: 54rem;
+                            height: 40.8rem;
+                            margin: 1em 0;
+                            max-width: 100%;
+                        "
+                        frameborder="0"
+                    ></iframe>
+
+                    <h2 class="component-subheading">
+                        3. Basic vertical card with icons only
+                    </h2>
+                    <div class="website-card-vertical-container">
+                        <div class="card card-vertical card-only-icons">
+                            <div class="card-body">
+                                <div class="card-image-header-container">
+                                    <img
+                                        src="/Images/demo-image.png"
+                                        alt="Tokyo Olympics"
+                                        class="card-image"
+                                    />
+                                    <header class="card-header-container">
+                                        <h1 class="card-heading">
+                                            Tokyo Olympics 2020
+                                        </h1>
+                                        <p class="card-subheading">
+                                            by Mohit Dhatrak
+                                        </p>
+                                    </header>
+                                </div>
+                                <p class="card-text">
+                                    The Tokyo 2020 Games were an unprecedented
+                                    demonstration of unity and solidarity as the
+                                    world came together for the first time
+                                    following the onset of the COVID-19, for an
+                                    Olympic Games focused on the pure
+                                    essentials: a celebration of athletes and
+                                    sport.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="card-primary-buttons-container">
+                                    <button class="card-button">Read</button>
+                                    <button class="card-button">
+                                        Bookmark
+                                    </button>
+                                </div>
+                                <div class="card-secondary-buttons-container">
+                                    <button class="card-button">
+                                        <i
+                                            class="material-icons card-svg-icons"
+                                        >
+                                            favorite_border
+                                        </i>
+                                    </button>
+                                    <button class="card-button">
+                                        <i
+                                            class="material-icons card-svg-icons"
+                                        >
+                                            share
+                                        </i>
+                                    </button>
+                                    <button class="card-button">
+                                        <i
+                                            class="material-icons card-svg-icons"
+                                        >
+                                            more_vert
+                                        </i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <iframe
+                        src="https://www.thiscodeworks.com/embed/61fabd39b783be0015bbaf17"
+                        style="
+                            width: 54rem;
+                            height: 40.8rem;
+                            margin: 1em 0;
+                            max-width: 100%;
+                        "
+                        frameborder="0"
+                    ></iframe>
+
+                    <h2 class="component-subheading">
+                        4. Basic vertical card with buttons only
+                    </h2>
+                    <div class="website-card-vertical-container">
+                        <div class="card card-vertical card-only-buttons">
+                            <div class="card-body">
+                                <div class="card-image-header-container">
+                                    <img
+                                        src="/Images/demo-image.png"
+                                        alt="Tokyo Olympics"
+                                        class="card-image"
+                                    />
+                                    <header class="card-header-container">
+                                        <h1 class="card-heading">
+                                            Tokyo Olympics 2020
+                                        </h1>
+                                        <p class="card-subheading">
+                                            by Mohit Dhatrak
+                                        </p>
+                                    </header>
+                                </div>
+                                <p class="card-text">
+                                    The Tokyo 2020 Games were an unprecedented
+                                    demonstration of unity and solidarity as the
+                                    world came together for the first time
+                                    following the onset of the COVID-19, for an
+                                    Olympic Games focused on the pure
+                                    essentials: a celebration of athletes and
+                                    sport.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="card-primary-buttons-container">
+                                    <button class="card-button">Read</button>
+                                    <button class="card-button">
+                                        Bookmark
+                                    </button>
+                                </div>
+                                <div class="card-secondary-buttons-container">
+                                    <button class="card-button">
+                                        <i
+                                            class="material-icons card-svg-icons"
+                                        >
+                                            favorite_border
+                                        </i>
+                                    </button>
+                                    <button class="card-button">
+                                        <i
+                                            class="material-icons card-svg-icons"
+                                        >
+                                            share
+                                        </i>
+                                    </button>
+                                    <button class="card-button">
+                                        <i
+                                            class="material-icons card-svg-icons"
+                                        >
+                                            more_vert
+                                        </i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <iframe
+                        src="https://www.thiscodeworks.com/embed/61fabe07b783be0015bbaf19"
+                        style="
+                            width: 54rem;
+                            height: 40.8rem;
+                            margin: 1em 0;
+                            max-width: 100%;
+                        "
+                        frameborder="0"
+                    ></iframe>
+
+                    <h2 class="component-subheading">
+                        5. Basic vertical card with text overlay
+                    </h2>
+                    <div class="website-card-vertical-container">
+                        <div class="card card-vertical card-text-overlay">
+                            <div class="card-body">
+                                <div class="card-image-header-container">
+                                    <img
+                                        src="/Images/demo-image.png"
+                                        alt="Tokyo Olympics"
+                                        class="card-image"
+                                    />
+                                    <header class="card-header-container">
+                                        <h1 class="card-heading">
+                                            Tokyo Olympics 2020
+                                        </h1>
+                                        <p class="card-subheading">
+                                            by Mohit Dhatrak
+                                        </p>
+                                    </header>
+                                </div>
+                                <p class="card-text">
+                                    The Tokyo 2020 Games were an unprecedented
+                                    demonstration of unity and solidarity as the
+                                    world came together for the first time
+                                    following the onset of the COVID-19, for an
+                                    Olympic Games focused on the pure
+                                    essentials: a celebration of athletes and
+                                    sport.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="card-primary-buttons-container">
+                                    <button class="card-button">Read</button>
+                                    <button class="card-button">
+                                        Bookmark
+                                    </button>
+                                </div>
+                                <div class="card-secondary-buttons-container">
+                                    <button class="card-button">
+                                        <i
+                                            class="material-icons card-svg-icons"
+                                        >
+                                            favorite_border
+                                        </i>
+                                    </button>
+                                    <button class="card-button">
+                                        <i
+                                            class="material-icons card-svg-icons"
+                                        >
+                                            share
+                                        </i>
+                                    </button>
+                                    <button class="card-button">
+                                        <i
+                                            class="material-icons card-svg-icons"
+                                        >
+                                            more_vert
+                                        </i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <iframe
+                        src="https://www.thiscodeworks.com/embed/61fabfacb783be0015bbaf1b"
+                        style="
+                            width: 54rem;
+                            height: 40.8rem;
+                            margin: 1em 0;
+                            max-width: 100%;
+                        "
+                        frameborder="0"
+                    ></iframe>
+
+                    <h2 class="component-subheading">
+                        6. Basic vertical card with text only
+                    </h2>
+                    <div class="website-card-vertical-container">
+                        <div class="card card-vertical card-only-text">
+                            <div class="card-body">
+                                <div class="card-image-header-container">
+                                    <img
+                                        src="/Images/demo-image.png"
+                                        alt="Tokyo Olympics"
+                                        class="card-image"
+                                    />
+                                    <header class="card-header-container">
+                                        <h1 class="card-heading">
+                                            Tokyo Olympics 2020
+                                        </h1>
+                                        <p class="card-subheading">
+                                            by Mohit Dhatrak
+                                        </p>
+                                    </header>
+                                </div>
+                                <p class="card-text">
+                                    The Tokyo 2020 Games were an unprecedented
+                                    demonstration of unity and solidarity as the
+                                    world came together for the first time
+                                    following the onset of the COVID-19, for an
+                                    Olympic Games focused on the pure
+                                    essentials: a celebration of athletes and
+                                    sport.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="card-primary-buttons-container">
+                                    <button class="card-button">Read</button>
+                                    <button class="card-button">
+                                        Bookmark
+                                    </button>
+                                </div>
+                                <div class="card-secondary-buttons-container">
+                                    <button class="card-button">
+                                        <i
+                                            class="material-icons card-svg-icons"
+                                        >
+                                            favorite_border
+                                        </i>
+                                    </button>
+                                    <button class="card-button">
+                                        <i
+                                            class="material-icons card-svg-icons"
+                                        >
+                                            share
+                                        </i>
+                                    </button>
+                                    <button class="card-button">
+                                        <i
+                                            class="material-icons card-svg-icons"
+                                        >
+                                            more_vert
+                                        </i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <iframe
+                        src="https://www.thiscodeworks.com/embed/61fac05ab783be0015bbaf1d"
+                        style="
+                            width: 54rem;
+                            height: 40.8rem;
+                            margin: 1em 0;
+                            max-width: 100%;
+                        "
+                        frameborder="0"
+                    ></iframe>
+
+                    <!-- different html -->
+                    <h2 class="component-subheading">
+                        7. Basic vertical card with badge
+                    </h2>
+                    <div class="website-card-vertical-container">
+                        <div class="card card-vertical card-with-badge">
+                            <div class="card-body">
+                                <div class="card-image-header-container">
+                                    <img
+                                        src="/Images/boxing-bag.jpg"
+                                        alt="Boxing Bag"
+                                        class="card-image"
+                                    />
+                                    <span class="card-badge">Bestseller</span>
+                                    <div
+                                        class="card-secondary-buttons-container"
+                                    >
+                                        <button class="card-button">
+                                            <i
+                                                class="material-icons card-svg-icons"
+                                            >
+                                                favorite_border
+                                            </i>
+                                        </button>
+                                    </div>
+                                    <header class="card-header-container">
+                                        <h1 class="card-heading">
+                                            Classic Boxing Bag
+                                        </h1>
+                                        <p class="card-subheading">
+                                            Description: 50 Kg ...
+                                        </p>
+                                    </header>
+                                </div>
+                                <p class="card-text">₹1200 (40% off)</p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="card-primary-buttons-container">
+                                    <button class="card-button">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <iframe
+                        src="https://www.thiscodeworks.com/embed/61fac1afb783be0015bbaf1e"
+                        style="
+                            width: 54rem;
+                            height: 32.3rem;
+                            margin: 1em 0;
+                            max-width: 100%;
+                        "
+                        frameborder="0"
+                    ></iframe>
+
+                    <!-- different html -->
+                    <h2 class="component-subheading">
+                        8. Basic vertical card with dismiss
+                    </h2>
+                    <div class="website-card-vertical-container">
+                        <div class="card card-vertical card-with-dismiss">
+                            <div class="card-body">
+                                <div class="card-image-header-container">
+                                    <img
+                                        src="/Images/boxing-bag.jpg"
+                                        alt="Boxing Bag"
+                                        class="card-image"
+                                    />
+                                    <span class="card-badge">Bestseller</span>
+                                    <div
+                                        class="card-secondary-buttons-container"
+                                    >
+                                        <button class="card-button">
+                                            <i
+                                                class="material-icons card-svg-icons"
+                                            >
+                                                highlight_off
+                                            </i>
+                                        </button>
+                                    </div>
+                                    <header class="card-header-container">
+                                        <h1 class="card-heading">
+                                            Classic Boxing Bag
+                                        </h1>
+                                        <p class="card-subheading">
+                                            Description: 50 Kg ...
+                                        </p>
+                                    </header>
+                                </div>
+                                <p class="card-text">₹1200 (40% off)</p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="card-primary-buttons-container">
+                                    <button class="card-button">
+                                        Add to wishlist
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <iframe
+                        src="https://www.thiscodeworks.com/embed/61fac706b783be0015bbaf25"
+                        style="
+                            width: 54rem;
+                            height: 32.3rem;
+                            margin: 1em 0;
+                            max-width: 100%;
+                        "
+                        frameborder="0"
+                    ></iframe>
+
+                    <h2 class="component-subheading">
+                        9. Basic horizontal card
+                    </h2>
+                    <div class="website-card-horizontal-container">
+                        <div class="card card-horizontal card-basic">
+                            <div class="card-body">
+                                <div class="card-image-header-container">
+                                    <img
+                                        src="/Images/demo-image.png"
+                                        alt="Tokyo Olympics"
+                                        class="card-image"
+                                    />
+                                    <header class="card-header-container">
+                                        <h1 class="card-heading">
+                                            Tokyo Olympics 2020
+                                        </h1>
+                                        <p class="card-subheading">
+                                            by Mohit Dhatrak
+                                        </p>
+                                    </header>
+                                </div>
+                                <p class="card-text">
+                                    The Tokyo 2020 Games were an unprecedented
+                                    demonstration of unity and solidarity as the
+                                    world came together for the first time
+                                    following the onset of the COVID-19, for an
+                                    Olympic Games focused on the pure
+                                    essentials: a celebration of athletes and
+                                    sport.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="card-primary-buttons-container">
+                                    <button class="card-button">Read</button>
+                                    <button class="card-button">
+                                        Bookmark
+                                    </button>
+                                </div>
+                                <div class="card-secondary-buttons-container">
+                                    <button class="card-button">
+                                        <i
+                                            class="material-icons card-svg-icons"
+                                        >
+                                            favorite_border
+                                        </i>
+                                    </button>
+                                    <button class="card-button">
+                                        <i
+                                            class="material-icons card-svg-icons"
+                                        >
+                                            share
+                                        </i>
+                                    </button>
+                                    <button class="card-button">
+                                        <i
+                                            class="material-icons card-svg-icons"
+                                        >
+                                            more_vert
+                                        </i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <iframe
+                        src="https://www.thiscodeworks.com/embed/61facae7b783be0015bbaf2b"
+                        style="
+                            width: 54rem;
+                            height: 40.8rem;
+                            margin: 1em 0;
+                            max-width: 100%;
+                        "
+                        frameborder="0"
+                    ></iframe>
+
+                    <div class="component-nav-container">
+                        <a
+                            href="/Components/Button/button.html"
+                            class="component-nav-link"
+                        >
+                            <i class="material-icons component-nav-arrow">
+                                arrow_left
+                            </i>
+                            <span>Button</span>
+                        </a>
+                        <a
+                            href="/Components/Image/image.html"
+                            class="component-nav-link"
+                        >
+                            <span>Image</span
+                            ><i class="material-icons component-nav-arrow">
+                                arrow_right
+                            </i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
