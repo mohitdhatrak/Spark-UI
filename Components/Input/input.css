@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+    /* input textbox */
+    --input-bg-color: none;
+    --input-color: none;
+    --input-border: 2px solid grey;
+    --input-border-radius: 0.4em;
+    --input-width: 25rem;
+    /* input textbox error */
+    --error-input-bg-color: none;
+    --error-input-color: none;
+    --error-input-border: 2px solid #e63030;
+    --error-input-border-radius: 0.4em;
+    --error-input-width: 25rem;
+    /* input textbox warn */
+    --warn-input-bg-color: none;
+    --warn-input-color: none;
+    --warn-input-border: 2px solid #ffae22;
+    --warn-input-border-radius: 0.4em;
+    --warn-input-width: 25rem;
+    /* input textbox success */
+    --success-input-bg-color: none;
+    --success-input-color: none;
+    --success-input-border: 2px solid #059669;
+    --success-input-border-radius: 0.4em;
+    --success-input-width: 25rem;
+    /* focus color is seen when you use tab key to access buttons or links */
+    --input-focus-outline-color: black;
+}
+
+.input-label {
+    font-size: 1.2rem;
+    display: block;
+    margin-bottom: 0.3em;
+}
+
+.input {
+    font-size: 1.2rem;
+    padding: 0.4em 0.5em;
+    width: var(--input-width);
+    max-width: 95%;
+    background-color: var(--input-bg-color);
+    color: var(--input-color);
+    border: var(--input-border);
+    border-radius: var(--input-border-radius);
+}
+
+.input.input-error {
+    width: var(--error-input-width);
+    background-color: var(--error-input-bg-color);
+    color: var(--error-input-color);
+    border: var(--error-input-border);
+    border-radius: var(--error-input-border-radius);
+}
+
+.input.input-warn {
+    width: var(--warn-input-width);
+    background-color: var(--warn-input-bg-color);
+    color: var(--warn-input-color);
+    border: var(--warn-input-border);
+    border-radius: var(--warn-input-border-radius);
+}
+
+.input.input-success {
+    width: var(--success-input-width);
+    background-color: var(--success-input-bg-color);
+    color: var(--success-input-color);
+    border: var(--success-input-border);
+    border-radius: var(--success-input-border-radius);
+}
+
+.input:focus {
+    outline: var(--input-focus-outline-color) solid 2px;
+}

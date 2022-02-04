@@ -371,7 +371,7 @@ h2.component-subheading {
 
 .code-highlight {
     background-color: var(--website-primary-color);
-    padding: 0.1em 0.2em;
+    padding: 0.1em 0.3em;
     border-radius: 0.4em;
     margin: 0 0.2em;
 }
@@ -438,6 +438,7 @@ h2.component-subheading {
     align-items: flex-start;
     gap: 1.5em;
 }
+
 .website-alert-success {
     background-color: #d1e7dd;
 }
@@ -456,4 +457,22 @@ h2.component-subheading {
     display: flex;
     gap: 1.5em;
     flex-wrap: wrap;
+}
+
+/* website image component section */
+
+.website-image-container {
+    width: max-content;
+    max-width: 100%;
+    margin: 2.4em 0;
+    margin-bottom: 1.8rem;
+}
+
+/* website input component section */
+
+.website-input-container {
+    width: max-content;
+    max-width: 100%;
+    margin: 2.4em 0;
+    margin-bottom: 1.8rem;
 }
