@@ -162,6 +162,11 @@ body {
     text-align: center;
 }
 
+.landing-main-link:hover {
+    box-shadow: 0px 0px 8px 0.5px grey;
+    transform: scale(1.1);
+}
+
 .landing-main-link:nth-child(1) {
     background-color: #bae6fd;
 }
@@ -373,14 +378,7 @@ h2.component-subheading {
 
 /* website card component section */
 
-.website-card-vertical-container {
-    width: 23em;
-    margin: 2.4em 0;
-    margin-bottom: 1.2rem;
-    max-width: 100%;
-}
-
-.website-card-horizontal-container {
+.website-card-container {
     width: 23em;
     margin: 2.4em 0;
     margin-bottom: 1.2rem;
@@ -450,5 +448,12 @@ h2.component-subheading {
 
 /* website button component section */
 
-.website-button-container {
+.website-buttons-container {
+    margin: 2.4em 0;
+    margin-bottom: 1.2rem;
+
+    /* flex - properties */
+    display: flex;
+    gap: 1.5em;
+    flex-wrap: wrap;
 }
