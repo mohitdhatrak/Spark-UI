@@ -7,7 +7,6 @@
 
 body {
     margin: 0;
-    /* margin: 2em; */
 }
 
 :root {
@@ -20,13 +19,13 @@ body {
     --header-border-radius: 0;
     --header-link-hover-color: var(--website-secondary-color);
     --header-link-hover-border-radius: 1em;
-    --header-link-focus-outline-color: white;
+    --header-link-focus-outline-color: #fff;
 
     /* docs left nav bar CSS variables */
     --drawer-border-right: 2px solid #e0f2fe;
     --drawer-bg-color: transparent;
     --drawer-link-hover-color: var(--website-primary-color);
-    --drawer-link-focus-outline-color: black;
+    --drawer-link-focus-outline-color: #000;
 }
 
 /* website top navigation bar */
@@ -49,7 +48,7 @@ body {
 
 .landing-header-link {
     text-decoration: none;
-    color: black;
+    color: #000;
     font-size: 1.5rem;
     background-color: transparent;
     border: none;
@@ -153,13 +152,18 @@ body {
 
 .landing-main-link {
     text-decoration: none;
-    color: black;
+    color: #000;
     cursor: pointer;
     font-size: 1.3rem;
     padding: 0.5em 0;
     border-radius: 1.5em;
     width: 10rem;
     text-align: center;
+}
+
+.landing-main-link:hover {
+    box-shadow: 0px 0px 8px 0.5px #808080;
+    transform: scale(1.1);
 }
 
 .landing-main-link:nth-child(1) {
@@ -171,7 +175,7 @@ body {
 }
 
 .landing-main-link:nth-child(1):focus {
-    outline: black solid 2px;
+    outline: #000 solid 2px;
 }
 
 .landing-main-link:nth-child(2):focus {
@@ -250,7 +254,7 @@ body {
     font-size: 1.2rem;
     border-radius: 0.5em;
     text-decoration: none;
-    color: black;
+    color: #000;
     cursor: pointer;
     width: 95%;
 
@@ -322,7 +326,7 @@ body {
 
 .component-nav-link {
     text-decoration: none;
-    color: black;
+    color: #000;
     font-size: 1.1rem;
 
     /* flex - properties */
@@ -373,14 +377,7 @@ h2.component-subheading {
 
 /* website card component section */
 
-.website-card-vertical-container {
-    width: 23em;
-    margin: 2.4em 0;
-    margin-bottom: 1.2rem;
-    max-width: 100%;
-}
-
-.website-card-horizontal-container {
+.website-card-container {
     width: 23em;
     margin: 2.4em 0;
     margin-bottom: 1.2rem;
@@ -409,10 +406,53 @@ h2.component-subheading {
     gap: 1.8em;
 }
 
-/* website badge component section */
+/* website avatar component section */
 
 .website-avatar-container {
     display: inline;
     width: max-content;
     max-width: 100%;
+}
+
+/* website alert component section */
+
+.website-alert-container {
+    width: 50em;
+    margin: 2.4em 0;
+    margin-bottom: 1.2rem;
+    max-width: 100%;
+}
+
+.website-alert {
+    width: 30rem;
+    max-width: 90%;
+    padding: 0.8em 1.2em;
+    padding-right: 0.6em;
+    background-color: var(--website-primary-color);
+    border-radius: 0.3em;
+
+    /* flex - properties */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1.5em;
+}
+.website-alert-success {
+    background-color: #d1e7dd;
+}
+
+.website-alert-error {
+    background-color: #f8d7da;
+}
+
+/* website button component section */
+
+.website-buttons-container {
+    margin: 2.4em 0;
+    margin-bottom: 1.2rem;
+
+    /* flex - properties */
+    display: flex;
+    gap: 1.5em;
+    flex-wrap: wrap;
 }

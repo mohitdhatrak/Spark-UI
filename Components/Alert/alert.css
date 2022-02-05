@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+    --simple-alert-bg-color: #bae6fd;
+    --success-alert-bg-color: #d1e7dd;
+    --error-alert-bg-color: #f8d7da;
+    --alert-color: #000;
+    --alert-icon-color: #000;
+    /* focus color is seen when you use tab key to access buttons or links */
+    --alert-button-focus-outline-color: #000;
+}
+
+.alert {
+    width: 32%;
+    max-width: 90%;
+    padding: 0.8em 1.2em;
+    padding-right: 0.6em;
+    background-color: var(--simple-alert-bg-color);
+    border-radius: 0.3em;
+    position: absolute;
+    bottom: 1rem;
+
+    /* flex - properties */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1.5em;
+}
+
+.alert.alert-centre {
+    left: 34%;
+}
+
+.alert.alert-right {
+    right: 1rem;
+}
+
+.alert.alert-left {
+    left: 1rem;
+}
+
+@media screen and (max-width: 1030px) {
+    .alert {
+        width: 50%;
+    }
+
+    .alert.alert-centre {
+        left: 25%;
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width: 860px) {
+    .alert {
+        width: 60%;
+    }
+
+    .alert.alert-centre {
+        left: 20%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .alert {
+        width: 80%;
+    }
+
+    .alert.alert-centre {
+        left: 10%;
+    }
+}
+
+.alert-text {
+    font-size: 1.2rem;
+    color: var(--alert-color);
+    margin: 0;
+
+    /* flex - properties */
+    align-self: center;
+}
+
+.alert-buttons-container {
+    /* flex - properties */
+    display: flex;
+    gap: 1em;
+}
+
+.alert-button {
+    width: max-content;
+    font-size: 1.1rem;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    padding: 0.2rem;
+
+    /* flex - properties */
+    display: flex;
+    align-items: center;
+}
+
+.alert-button:focus {
+    outline: var(--alert-button-focus-outline-color) solid 2px;
+}
+
+.alert-svg-icons {
+    color: var(--alert-icon-color);
+}
+
+.alert-success {
+    background-color: var(--success-alert-bg-color);
+}
+
+.alert-error {
+    background-color: var(--error-alert-bg-color);
+}

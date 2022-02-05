@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+    /* primary-button */
+    --primary-button-bg-color: #bae6fd;
+    --primary-button-color: #000;
+    --primary-button-border: none;
+    --primary-button-border-radius: 1em;
+    /* secondary-button */
+    --secondary-button-bg-color: transparent;
+    --secondary-button-color: #000;
+    --secondary-button-border: 2px solid #bae6fd;
+    --secondary-button-border-radius: 1em;
+    /* warn-button */
+    --warn-button-bg-color: #dc2626;
+    --warn-button-color: #fff;
+    --warn-button-border: none;
+    --warn-button-border-radius: 1em;
+    /* primary-link */
+    --primary-link-bg-color: #bae6fd;
+    --primary-link-color: #000;
+    --primary-link-border: none;
+    --primary-link-border-radius: 1em;
+    /* secondary-link */
+    --secondary-link-bg-color: transparent;
+    --secondary-link-color: #000;
+    --secondary-link-border: 2px solid #bae6fd;
+    --secondary-link-border-radius: 1em;
+    /* button-icons */
+    --primary-button-icon-color: #000;
+    --secondary-button-icon-color: #000;
+    --warn-button-icon-color: #fff;
+    --button-icon-size: 1.4rem;
+    --floating-button-icon-size: 1.5rem;
+    /* focus color is seen when you use tab key to access buttons or links */
+    --primary-button-focus-outline-color: #000;
+    --secondary-button-focus-outline-color: #bae6fd;
+    --warn-button-focus-outline-color: #000;
+    --primary-link-focus-outline-color: #000;
+    --secondary-link-focus-outline-color: #bae6fd;
+}
+
+.button {
+    cursor: pointer;
+    padding: 0.2em 1em;
+    font-size: 1.5rem;
+}
+
+.button.button-primary {
+    background-color: var(--primary-button-bg-color);
+    border: var(--primary-button-border);
+    border-radius: var(--primary-button-border-radius);
+    color: var(--primary-button-color);
+}
+
+.button.button-primary:focus {
+    outline: var(--primary-button-focus-outline-color) solid 2px;
+}
+
+.button.button-secondary {
+    background-color: var(--secondary-button-bg-color);
+    border: var(--secondary-button-border);
+    border-radius: var(--secondary-button-border-radius);
+    color: var(--secondary-button-color);
+}
+
+.button.button-secondary:focus {
+    outline: var(--secondary-button-focus-outline-color) solid 2px;
+}
+
+.button.button-warn {
+    background-color: var(--warn-button-bg-color);
+    border: var(--warn-button-border);
+    border-radius: var(--warn-button-border-radius);
+    color: var(--warn-button-color);
+}
+
+.button.button-warn:focus {
+    outline: var(--warn-button-focus-outline-color) solid 2px;
+}
+
+.link {
+    text-decoration: none;
+    padding: 0.2em 1em;
+    font-size: 1.5rem;
+}
+
+.link.link-primary {
+    background-color: var(--primary-link-bg-color);
+    border: var(--primary-link-border);
+    border-radius: var(--primary-link-border-radius);
+    color: var(--primary-link-color);
+}
+
+.link.link-primary:focus {
+    outline: var(--primary-link-focus-outline-color) solid 2px;
+}
+
+.link.link-secondary {
+    background-color: var(--secondary-link-bg-color);
+    border: var(--secondary-link-border);
+    border-radius: var(--secondary-link-border-radius);
+    color: var(--secondary-link-color);
+}
+
+.link.link-secondary:focus {
+    outline: var(--secondary-link-focus-outline-color) solid 2px;
+}
+
+.button.button-icon-container {
+    padding-left: 0.8em;
+
+    /* flex - properties */
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.button-svg-icons {
+    font-size: var(--button-icon-size) !important;
+}
+
+.button-primary .button-svg-icons {
+    color: var(--primary-button-icon-color);
+}
+
+.button-secondary .button-svg-icons {
+    color: var(--secondary-button-icon-color);
+}
+
+.button-warn .button-svg-icons {
+    color: var(--warn-button-icon-color);
+}
+
+.button.button-floating {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border-width: 1px; /* thicker border distorts circle shape */
+
+    /* flex - properties */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.floating-button-icons {
+    font-size: var(--floating-button-icon-size) !important;
+}
+
+/* .button-primary .floating-button-icons,
+.button-secondary .floating-button-icons,
+.button-warn .floating-button-icons {
+    border-width: 1px;
+} */

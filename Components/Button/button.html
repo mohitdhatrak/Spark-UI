@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Spark UI</title>
+        <link
+            rel="shortcut icon"
+            href="/Images/spark-ui-favicon.png"
+            type="image/png"
+        />
+        <link rel="stylesheet" href="/Components/Button/button.css" />
+        <link rel="stylesheet" href="/main.css" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        />
+    </head>
+    <body>
+        <!-- header same as landing page -->
+        <nav aria-label="Top bar" class="landing-header">
+            <a href="/index.html" class="landing-header-link">
+                <img
+                    src="/Images/spark-ui-logo.png"
+                    alt="Website Logo"
+                    class="landing-header-logo"
+                />
+                <span class="landing-header-title">Spark UI</span>
+            </a>
+            <a
+                href="https://mohitdhatrak.bio.link/"
+                target="_blank"
+                class="landing-header-link"
+            >
+                <span>Let's Connect</span>
+                <i class="material-icons landing-svg-icon">public</i>
+            </a>
+        </nav>
+
+        <div class="docs-body-container">
+            <div class="side-nav-container">
+                <aside aria-label="Mail menu" class="drawer drawer-scroll">
+                    <h3 class="nested-drawer-title">Getting Started</h3>
+                    <div class="drawer-links-container nested-drawer">
+                        <a href="/docs.html" class="drawer-link">Usage</a>
+                    </div>
+                    <br />
+                    <h3 class="nested-drawer-title">Components</h3>
+                    <div class="drawer-links-container nested-drawer">
+                        <a
+                            href="/Components/Avatar/avatar.html"
+                            class="drawer-link"
+                            >Avatar</a
+                        >
+                        <a
+                            href="/Components/Alert/alert.html"
+                            class="drawer-link"
+                            >Alert</a
+                        >
+                        <a
+                            href="/Components/Badge/badge.html"
+                            class="drawer-link"
+                            >Badge</a
+                        >
+                        <a
+                            href="/Components/Button/button.html"
+                            class="drawer-link"
+                            >Button</a
+                        >
+                        <a href="/Components/Card/card.html" class="drawer-link"
+                            >Card</a
+                        >
+                        <a
+                            href="/Components/Image/image.html"
+                            class="drawer-link"
+                            >Image</a
+                        >
+                        <a
+                            href="/Components/Input/input.html"
+                            class="drawer-link"
+                            >Input</a
+                        >
+                    </div>
+                </aside>
+            </div>
+
+            <div>
+                <div class="component-content-container">
+                    <div class="component-nav-container">
+                        <a
+                            href="/Components/Badge/badge.html"
+                            class="component-nav-link"
+                        >
+                            <i class="material-icons component-nav-arrow">
+                                arrow_left
+                            </i>
+                            <span>Badge</span>
+                        </a>
+                        <a
+                            href="/Components/Card/card.html"
+                            class="component-nav-link"
+                        >
+                            <span>Card</span
+                            ><i class="material-icons component-nav-arrow">
+                                arrow_right
+                            </i>
+                        </a>
+                    </div>
+
+                    <h1 class="component-heading">Button</h1>
+
+                    <h3 class="component-subheading">
+                        Button component CSS - import url
+                    </h3>
+                    <iframe
+                        src="https://www.thiscodeworks.com/embed/61fc01ee6ab14d0015c32d94"
+                        style="
+                            width: 54rem;
+                            height: 6.875rem;
+                            margin: 1em 0;
+                            max-width: 100%;
+                        "
+                        frameborder="0"
+                    ></iframe>
+
+                    <h3 class="component-subheading">
+                        Button component CSS - HTML link tag
+                    </h3>
+                    <iframe
+                        src="https://www.thiscodeworks.com/embed/61fc01656ab14d0015c32d91"
+                        style="
+                            width: 54rem;
+                            height: 6.875rem;
+                            margin: 1em 0;
+                            max-width: 100%;
+                        "
+                        frameborder="0"
+                    ></iframe>
+
+                    <h2 class="component-subheading">
+                        How to modify component as per need !
+                    </h2>
+                    <p class="component-text">
+                        All 3 categories of buttons (primary, secondary, warn)
+                        have some default properties like colour,
+                        background-color, border, etc. For changing colours,
+                        borders, just use the given css-variables below in
+                        <span class="code-highlight">:root</span> selector of
+                        your CSS file. The reason for providing separate
+                        css-variables for all 3 categories of buttons is, if you
+                        wish to use any 2 or all 3 categories together, you can
+                        customize each button as per your requirement i.e. all 3
+                        can have different border styles or colour. No need to
+                        use these variables if you wish to use the buttons as it
+                        is. For the given icons inside buttons to be visible,
+                        you need to link the given google-icons stylesheet in
+                        your HTML too.
+                    </p>
+                    <iframe
+                        src="https://www.thiscodeworks.com/embed/61fd42e433c09d0015b44d98"
+                        style="
+                            width: 54rem;
+                            height: 37.4rem;
+                            margin: 1em 0;
+                            max-width: 100%;
+                        "
+                        frameborder="0"
+                    ></iframe>
+                    <h3 class="component-subheading">
+                        Google-icons CSS - HTML link tag
+                    </h3>
+                    <iframe
+                        src="https://www.thiscodeworks.com/embed/61fbdefd6ab14d0015c32d68"
+                        style="
+                            width: 54rem;
+                            height: 6.875rem;
+                            margin: 1em 0;
+                            max-width: 100%;
+                        "
+                        frameborder="0"
+                    ></iframe>
+
+                    <h2 class="component-subheading">1. Standard buttons</h2>
+                    <div class="website-buttons-container">
+                        <button class="button button-primary">Primary</button>
+                        <button class="button button-secondary">
+                            Secondary
+                        </button>
+                        <button class="button button-warn">Delete</button>
+                    </div>
+                    <br />
+                    <p class="component-text">
+                        There are 3 categories of buttons - primary, secondary
+                        and warn button. By default, HTML code for primary
+                        button is provided, hence class used is
+                        <span class="code-highlight">button-primary</span>. To
+                        use secondary button, replace class
+                        <span class="code-highlight">button-primary</span> with
+                        <span class="code-highlight">button-secondary</span>. To
+                        use warn button, replace class with
+                        <span class="code-highlight">button-warn</span>. All
+                        these buttons can have custom styles and colours.
+                    </p>
+                    <iframe
+                        src="https://www.thiscodeworks.com/embed/61fd440933c09d0015b44d99"
+                        style="
+                            width: 54rem;
+                            height: 6.875rem;
+                            margin: 1em 0;
+                            max-width: 100%;
+                        "
+                        frameborder="0"
+                    ></iframe>
+
+                    <h2 class="component-subheading">2. Link buttons</h2>
+                    <div class="website-buttons-container">
+                        <a href="" class="link link-primary">Page 1</a>
+                        <a href="" class="link link-secondary">Page 2</a>
+                    </div>
+                    <br />
+                    <p class="component-text">
+                        There are 2 categories of link buttons - primary and
+                        secondary. By default, HTML code for primary link button
+                        is provided, hence class used is
+                        <span class="code-highlight">link-primary</span>. To use
+                        secondary link button, replace class
+                        <span class="code-highlight">link-primary</span> with
+                        <span class="code-highlight">link-secondary</span>. Both
+                        of these buttons can have custom styles and colours.
+                    </p>
+                    <iframe
+                        src="https://www.thiscodeworks.com/embed/61fd44bf33c09d0015b44d9a"
+                        style="
+                            width: 54rem;
+                            height: 6.875rem;
+                            margin: 1em 0;
+                            max-width: 100%;
+                        "
+                        frameborder="0"
+                    ></iframe>
+
+                    <h2 class="component-subheading">3. Icon buttons</h2>
+                    <div class="website-buttons-container">
+                        <button
+                            class="button button-icon-container button-primary"
+                        >
+                            <i class="material-icons button-svg-icons"
+                                >flash_on</i
+                            >
+                            <span>Buy now</span>
+                        </button>
+                        <button
+                            class="button button-icon-container button-secondary"
+                        >
+                            <i class="material-icons button-svg-icons"
+                                >shopping_cart</i
+                            >
+                            <span>Add to cart</span>
+                        </button>
+                        <button
+                            class="button button-icon-container button-warn"
+                        >
+                            <i class="material-icons button-svg-icons"
+                                >delete</i
+                            >
+                            <span>Remove</span>
+                        </button>
+                    </div>
+                    <br />
+                    <p class="component-text">
+                        There are 3 categories of icon buttons - primary,
+                        secondary and warn button. By default, HTML code for
+                        primary icon button is provided, hence class used is
+                        <span class="code-highlight">button-primary</span>. To
+                        use secondary icon button, replace class
+                        <span class="code-highlight">button-primary</span> with
+                        <span class="code-highlight">button-secondary</span>. To
+                        use warn icon button, replace class with
+                        <span class="code-highlight">button-warn</span>. All
+                        these buttons can have custom styles and colours.
+                    </p>
+                    <iframe
+                        src="https://www.thiscodeworks.com/embed/61fd45d433c09d0015b44d9c"
+                        style="
+                            width: 54rem;
+                            height: 9.325rem;
+                            margin: 1em 0;
+                            max-width: 100%;
+                        "
+                        frameborder="0"
+                    ></iframe>
+
+                    <h2 class="component-subheading">
+                        4. Floating action buttons
+                    </h2>
+                    <div class="website-buttons-container">
+                        <button class="button button-floating button-primary">
+                            <i class="material-icons floating-button-icons"
+                                >add</i
+                            >
+                        </button>
+                        <button class="button button-floating button-secondary">
+                            <i class="material-icons floating-button-icons"
+                                >create</i
+                            >
+                        </button>
+                        <button class="button button-floating button-secondary">
+                            <i class="material-icons floating-button-icons"
+                                >arrow_upward</i
+                            >
+                        </button>
+                        <button class="button button-floating button-warn">
+                            <i class="material-icons floating-button-icons"
+                                >call_end</i
+                            >
+                        </button>
+                    </div>
+                    <br />
+                    <p class="component-text">
+                        There are 3 categories of floating action buttons -
+                        primary, secondary and warn button. By default, HTML
+                        code for primary button is provided, hence class used is
+                        <span class="code-highlight">button-primary</span>. To
+                        use secondary button, replace class
+                        <span class="code-highlight">button-primary</span> with
+                        <span class="code-highlight">button-secondary</span>. To
+                        use warn button, replace class with
+                        <span class="code-highlight">button-warn</span>. All
+                        these buttons can have custom styles and colours, except
+                        here border-width is fixed as increasing border-width
+                        distorts the circular shape.
+                    </p>
+                    <iframe
+                        src="https://www.thiscodeworks.com/embed/61fd466033c09d0015b44d9f"
+                        style="
+                            width: 54rem;
+                            height: 8.5rem;
+                            margin: 1em 0;
+                            max-width: 100%;
+                        "
+                        frameborder="0"
+                    ></iframe>
+
+                    <div class="component-nav-container">
+                        <a
+                            href="/Components/Badge/badge.html"
+                            class="component-nav-link"
+                        >
+                            <i class="material-icons component-nav-arrow">
+                                arrow_left
+                            </i>
+                            <span>Badge</span>
+                        </a>
+                        <a
+                            href="/Components/Card/card.html"
+                            class="component-nav-link"
+                        >
+                            <span>Card</span
+                            ><i class="material-icons component-nav-arrow">
+                                arrow_right
+                            </i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
