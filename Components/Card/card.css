@@ -28,7 +28,8 @@
     --card-badge-border: 1px solid black;
     --card-badge-border-radius: 0.5em;
     --card-badge-color: black;
-    --card-button-focus-outline-color: #3b82f6; /* focus color is seen when you use tab key to access buttons or links*/
+    /* focus color is seen when you use tab key to access buttons or links*/
+    --card-button-focus-outline-color: #3b82f6;
 }
 
 .card {
