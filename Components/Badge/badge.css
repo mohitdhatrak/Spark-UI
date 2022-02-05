@@ -6,24 +6,24 @@
 :root {
     /* badge-on-text */
     --text-badge-bg-color: transparent;
-    --text-badge-border: 1px dashed black;
+    --text-badge-border: 1px dashed #000;
     --badge1-bg-color: #bae6fd;
-    --badge1-border: 1px solid black;
+    --badge1-border: 1px solid #000;
     /* badge-on-button */
     --button-badge-bg-color: #bae6fd;
-    --button-badge-border: 1px solid black;
+    --button-badge-border: 1px solid #000;
     --badge2-bg-color: #2563eb;
-    --badge2-border: 1px solid black;
+    --badge2-border: 1px solid #000;
     /* badge-on-icon */
     --icon-badge-color: #059669;
     --badge3-bg-color: #dc2626;
-    --badge3-border: 1px solid white;
+    --badge3-border: 1px solid #fff;
     /* badge-on-avatar */
     --avatar-badge-border: none;
     --badge4-bg-color: #ff0000;
-    --badge4-border: 1px solid white;
+    --badge4-border: 1px solid #fff;
     /* focus color is seen when you use tab key to access buttons or links*/
-    --badge-focus-outline-color: black;
+    --badge-focus-outline-color: #000;
 }
 
 /* text with badge */
@@ -123,7 +123,7 @@
     background-color: var(--badge2-bg-color);
     border: var(--badge2-border);
     border-radius: 50%;
-    color: white;
+    color: #fff;
     position: absolute;
     right: -5%;
     top: -20%;
@@ -190,7 +190,7 @@
     height: 1.3rem;
     background-color: var(--badge3-bg-color);
     border: var(--badge3-border);
-    color: white;
+    color: #fff;
     border-radius: 50%;
     position: absolute;
     right: 0;
@@ -239,7 +239,7 @@
     height: 0.9rem;
     background-color: var(--badge4-bg-color);
     border: var(--badge4-border);
-    color: white;
+    color: #fff;
     border-radius: 50%;
     position: absolute;
     right: 2%;

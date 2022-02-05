@@ -6,28 +6,28 @@
 :root {
     /* card CSS variables */
     --card-box-shadow: none;
-    --card-hover-box-shadow: 0px 0px 20px 1px grey;
+    --card-hover-box-shadow: 0px 0px 20px 1px #808080;
     --card-bg-color: transparent; /* bg stands for background */
-    --card-border: 1px solid black;
+    --card-border: 1px solid #000;
     --card-border-radius: 1em;
-    --card-image-border: 1px solid black;
+    --card-image-border: 1px solid #000;
     --card-image-border-radius: 0.5em;
-    --card-image-text-overlay-color: white;
-    --card-primary-button-color: black;
+    --card-image-text-overlay-color: #fff;
+    --card-primary-button-color: #000;
     --card-primary-button-bg-color: #bae6fd;
     --card-primary-button-border: none;
     --card-primary-button-border-radius: 0.6em;
     --card-button-hover-border-radius: none;
-    --card-secondary-button-color: black; /* i.e. card icon buttons */
+    --card-secondary-button-color: #000; /* i.e. card icon buttons */
     --card-secondary-button-bg-color: none;
     --card-secondary-button-border: none;
     --card-secondary-button-border-radius: 0.6em;
     --card-button-hover-color: #7dd3fc;
     --card-icon-size: 1.4rem;
     --card-badge-bg-color: #bae6fd;
-    --card-badge-border: 1px solid black;
+    --card-badge-border: 1px solid #000;
     --card-badge-border-radius: 0.5em;
-    --card-badge-color: black;
+    --card-badge-color: #000;
     /* focus color is seen when you use tab key to access buttons or links */
     --card-button-focus-outline-color: #3b82f6;
 }
@@ -332,7 +332,7 @@
     text-align: center;
 
     position: absolute;
-    border: 1px solid black;
+    border: 1px solid #000;
     top: 1em;
     left: 1em;
 }

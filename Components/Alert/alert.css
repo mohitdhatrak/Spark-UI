@@ -7,10 +7,10 @@
     --simple-alert-bg-color: #bae6fd;
     --success-alert-bg-color: #d1e7dd;
     --error-alert-bg-color: #f8d7da;
-    --alert-color: black;
-    --alert-icon-color: black;
+    --alert-color: #000;
+    --alert-icon-color: #000;
     /* focus color is seen when you use tab key to access buttons or links */
-    --alert-button-focus-outline-color: black;
+    --alert-button-focus-outline-color: #000;
 }
 
 .alert {

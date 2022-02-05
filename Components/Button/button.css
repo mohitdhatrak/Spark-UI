@@ -6,40 +6,40 @@
 :root {
     /* primary-button */
     --primary-button-bg-color: #bae6fd;
-    --primary-button-color: black;
+    --primary-button-color: #000;
     --primary-button-border: none;
     --primary-button-border-radius: 1em;
     /* secondary-button */
     --secondary-button-bg-color: transparent;
-    --secondary-button-color: black;
+    --secondary-button-color: #000;
     --secondary-button-border: 2px solid #bae6fd;
     --secondary-button-border-radius: 1em;
     /* warn-button */
     --warn-button-bg-color: #dc2626;
-    --warn-button-color: white;
+    --warn-button-color: #fff;
     --warn-button-border: none;
     --warn-button-border-radius: 1em;
     /* primary-link */
     --primary-link-bg-color: #bae6fd;
-    --primary-link-color: black;
+    --primary-link-color: #000;
     --primary-link-border: none;
     --primary-link-border-radius: 1em;
     /* secondary-link */
     --secondary-link-bg-color: transparent;
-    --secondary-link-color: black;
+    --secondary-link-color: #000;
     --secondary-link-border: 2px solid #bae6fd;
     --secondary-link-border-radius: 1em;
     /* button-icons */
-    --primary-button-icon-color: black;
-    --secondary-button-icon-color: black;
-    --warn-button-icon-color: white;
+    --primary-button-icon-color: #000;
+    --secondary-button-icon-color: #000;
+    --warn-button-icon-color: #fff;
     --button-icon-size: 1.4rem;
     --floating-button-icon-size: 1.5rem;
     /* focus color is seen when you use tab key to access buttons or links */
-    --primary-button-focus-outline-color: black;
+    --primary-button-focus-outline-color: #000;
     --secondary-button-focus-outline-color: #bae6fd;
-    --warn-button-focus-outline-color: black;
-    --primary-link-focus-outline-color: black;
+    --warn-button-focus-outline-color: #000;
+    --primary-link-focus-outline-color: #000;
     --secondary-link-focus-outline-color: #bae6fd;
 }
 
