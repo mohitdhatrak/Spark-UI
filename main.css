@@ -167,11 +167,11 @@ body {
 }
 
 .landing-main-link:nth-child(1) {
-    background-color: #bae6fd;
+    background-color: var(--website-primary-color);
 }
 
 .landing-main-link:nth-child(2) {
-    border: 2px solid #bae6fd;
+    border: 2px solid var(--website-primary-color);
 }
 
 .landing-main-link:nth-child(1):focus {
@@ -179,7 +179,7 @@ body {
 }
 
 .landing-main-link:nth-child(2):focus {
-    outline: #bae6fd solid 2px;
+    outline: var(--website-primary-color) solid 2px;
 }
 
 /* docs left nav bar */
@@ -471,6 +471,16 @@ h2.component-subheading {
 
 .website-input-container {
     width: max-content;
+    max-width: 100%;
+    margin: 2.4em 0;
+    margin-bottom: 1.8rem;
+}
+
+/* website navigation component section */
+
+.website-nav-component-container {
+    width: 52rem;
+    height: 18rem;
     max-width: 100%;
     margin: 2.4em 0;
     margin-bottom: 1.8rem;
