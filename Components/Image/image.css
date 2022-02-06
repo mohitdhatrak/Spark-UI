@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+    --responsive-image-width: 45rem;
+    --round-image-width: 15rem;
+    --responsive-image-border: none;
+    --round-image-border: none;
+}
+
+.image-container {
+    width: var(--responsive-image-width);
+    max-width: 95%;
+}
+
+.image {
+    width: 100%;
+    border: var(--responsive-image-border);
+}
+
+.round-image {
+    width: var(--round-image-width);
+    height: var(--round-image-width);
+    object-fit: cover;
+    border-radius: 50%;
+    border: var(--round-image-border);
+}

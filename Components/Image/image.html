@@ -10,6 +10,7 @@
             href="/Images/spark-ui-favicon.png"
             type="image/png"
         />
+        <link rel="stylesheet" href="/Components/Image/image.css" />
         <link rel="stylesheet" href="/main.css" />
         <link
             rel="stylesheet"
@@ -87,36 +88,33 @@
             <div>
                 <div class="component-content-container">
                     <div class="component-nav-container">
-                        <a href="/index.html" class="component-nav-link">
+                        <a
+                            href="/Components/Card/card.html"
+                            class="component-nav-link"
+                        >
                             <i class="material-icons component-nav-arrow">
                                 arrow_left
                             </i>
-                            <span>Home</span>
+                            <span>Card</span>
                         </a>
                         <a
-                            href="/Components/Avatar/avatar.html"
+                            href="/Components/Input/input.html"
                             class="component-nav-link"
                         >
-                            <span>Avatar</span
+                            <span>Input</span
                             ><i class="material-icons component-nav-arrow">
                                 arrow_right
                             </i>
                         </a>
                     </div>
 
-                    <h1 class="component-heading">Usage</h1>
-
-                    <p class="component-text">
-                        To use the available components in your project, simply
-                        import (copy) the given stylesheet in your css or html
-                        file.
-                    </p>
+                    <h1 class="component-heading">Image</h1>
 
                     <h3 class="component-subheading">
-                        All components CSS - import url
+                        Image component CSS - import url
                     </h3>
                     <iframe
-                        src="https://www.thiscodeworks.com/embed/61fdaa3b33c09d0015b44e19"
+                        src="https://www.thiscodeworks.com/embed/61fd86e033c09d0015b44df6"
                         style="
                             width: 54rem;
                             height: 6.875rem;
@@ -127,10 +125,10 @@
                     ></iframe>
 
                     <h3 class="component-subheading">
-                        Input component CSS - HTML link tag
+                        Image component CSS - HTML link tag
                     </h3>
                     <iframe
-                        src="https://www.thiscodeworks.com/embed/61fdaab933c09d0015b44e1a"
+                        src="https://www.thiscodeworks.com/embed/61fd871033c09d0015b44df7"
                         style="
                             width: 54rem;
                             height: 6.875rem;
@@ -140,28 +138,79 @@
                         frameborder="0"
                     ></iframe>
 
+                    <h2 class="component-subheading">
+                        How to modify component as per need !
+                    </h2>
                     <p class="component-text">
-                        You can also import individual components if you require
-                        only some of the components. The links to import
-                        individual components can be found in their respective
-                        pages at the top.
+                        Both images have no border by default. For adding
+                        borders, just use the given css-variable below in
+                        <span class="code-highlight">:root</span> selector of
+                        your CSS file. For changing the sizes, css-variables of
+                        width are given for both images. No need to use these
+                        variables if you wish to use the images as it is.
                     </p>
-
-                    <p class="component-text">
-                        <span class="code-highlight">Disclaimer:</span>
-                        In most of the components icons used are from google
-                        icons website. So ideally with components those
-                        components you need to import the given stylesheet in
-                        your HTML code too.
-                    </p>
-                    <h3 class="component-subheading">
-                        Google-icons CSS - HTML link tag
-                    </h3>
                     <iframe
-                        src="https://www.thiscodeworks.com/embed/61fbdefd6ab14d0015c32d68"
+                        src="https://www.thiscodeworks.com/embed/61fd868e33c09d0015b44df5"
                         style="
                             width: 54rem;
-                            height: 6.875rem;
+                            height: 9.35rem;
+                            margin: 1em 0;
+                            max-width: 100%;
+                        "
+                        frameborder="0"
+                    ></iframe>
+
+                    <h2 class="component-subheading">1. Responsive Image</h2>
+                    <div class="website-image-container">
+                        <div class="image-container">
+                            <img
+                                src="/Images/image-component.jpg"
+                                alt="Sunset wallpaper"
+                                class="image"
+                            />
+                        </div>
+                    </div>
+                    <p class="component-text">
+                        The above image is responsive, you can set any required
+                        width in the given css-variable
+                        <span class="code-highlight"
+                            >--responsive-image-width</span
+                        >.
+                    </p>
+                    <iframe
+                        src="https://www.thiscodeworks.com/embed/61fd87af33c09d0015b44df8"
+                        style="
+                            width: 54rem;
+                            height: 8.5rem;
+                            margin: 1em 0;
+                            max-width: 100%;
+                        "
+                        frameborder="0"
+                    ></iframe>
+
+                    <h2 class="component-subheading">2. Small Round Image</h2>
+                    <div class="website-image-container">
+                        <div class="image-container">
+                            <img
+                                src="/Images/image-component.jpg"
+                                alt="Sunset wallpaper"
+                                class="image round-image"
+                            />
+                        </div>
+                    </div>
+                    <p class="component-text">
+                        This round image is not responsive, hence it is
+                        recommended to provide a small width that can even fit a
+                        small screen (css-variable
+                        <span class="code-highlight">--round-image-width</span
+                        >). It crops image appropriately to make it round, while
+                        maintaining the aspect ratio.
+                    </p>
+                    <iframe
+                        src="https://www.thiscodeworks.com/embed/61fd888233c09d0015b44dfc"
+                        style="
+                            width: 54rem;
+                            height: 8.5rem;
                             margin: 1em 0;
                             max-width: 100%;
                         "
@@ -169,17 +218,20 @@
                     ></iframe>
 
                     <div class="component-nav-container">
-                        <a href="/index.html" class="component-nav-link">
+                        <a
+                            href="/Components/Card/card.html"
+                            class="component-nav-link"
+                        >
                             <i class="material-icons component-nav-arrow">
                                 arrow_left
                             </i>
-                            <span>Home</span>
+                            <span>Card</span>
                         </a>
                         <a
-                            href="/Components/Avatar/avatar.html"
+                            href="/Components/Input/input.html"
                             class="component-nav-link"
                         >
-                            <span>Avatar</span
+                            <span>Input</span
                             ><i class="material-icons component-nav-arrow">
                                 arrow_right
                             </i>

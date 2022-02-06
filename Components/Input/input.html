@@ -10,6 +10,7 @@
             href="/Images/spark-ui-favicon.png"
             type="image/png"
         />
+        <link rel="stylesheet" href="/Components/Input/input.css" />
         <link rel="stylesheet" href="/main.css" />
         <link
             rel="stylesheet"
@@ -87,36 +88,33 @@
             <div>
                 <div class="component-content-container">
                     <div class="component-nav-container">
-                        <a href="/index.html" class="component-nav-link">
+                        <a
+                            href="/Components/Image/image.html"
+                            class="component-nav-link"
+                        >
                             <i class="material-icons component-nav-arrow">
                                 arrow_left
                             </i>
-                            <span>Home</span>
+                            <span>Image</span>
                         </a>
                         <a
-                            href="/Components/Avatar/avatar.html"
+                            href="/Components/Navigation/navigation.html"
                             class="component-nav-link"
                         >
-                            <span>Avatar</span
-                            ><i class="material-icons component-nav-arrow">
+                            <span>Navigation</span>
+                            <i class="material-icons component-nav-arrow">
                                 arrow_right
                             </i>
                         </a>
                     </div>
 
-                    <h1 class="component-heading">Usage</h1>
-
-                    <p class="component-text">
-                        To use the available components in your project, simply
-                        import (copy) the given stylesheet in your css or html
-                        file.
-                    </p>
+                    <h1 class="component-heading">Input</h1>
 
                     <h3 class="component-subheading">
-                        All components CSS - import url
+                        Input component CSS - import url
                     </h3>
                     <iframe
-                        src="https://www.thiscodeworks.com/embed/61fdaa3b33c09d0015b44e19"
+                        src="https://www.thiscodeworks.com/embed/61fd958033c09d0015b44e11"
                         style="
                             width: 54rem;
                             height: 6.875rem;
@@ -130,7 +128,7 @@
                         Input component CSS - HTML link tag
                     </h3>
                     <iframe
-                        src="https://www.thiscodeworks.com/embed/61fdaab933c09d0015b44e1a"
+                        src="https://www.thiscodeworks.com/embed/61fd95b233c09d0015b44e13"
                         style="
                             width: 54rem;
                             height: 6.875rem;
@@ -140,28 +138,104 @@
                         frameborder="0"
                     ></iframe>
 
+                    <h2 class="component-subheading">
+                        How to modify component as per need !
+                    </h2>
                     <p class="component-text">
-                        You can also import individual components if you require
-                        only some of the components. The links to import
-                        individual components can be found in their respective
-                        pages at the top.
+                        All input components have default border-styles,
+                        border-radius. For changing the values, just use the
+                        given css-variable below in
+                        <span class="code-highlight">:root</span> selector of
+                        your CSS file. For changing the width of input field,
+                        css-variables of width are given for all. No need to use
+                        these variables if you wish to use the images as it is.
                     </p>
-
-                    <p class="component-text">
-                        <span class="code-highlight">Disclaimer:</span>
-                        In most of the components icons used are from google
-                        icons website. So ideally with components those
-                        components you need to import the given stylesheet in
-                        your HTML code too.
-                    </p>
-                    <h3 class="component-subheading">
-                        Google-icons CSS - HTML link tag
-                    </h3>
                     <iframe
-                        src="https://www.thiscodeworks.com/embed/61fbdefd6ab14d0015c32d68"
+                        src="https://www.thiscodeworks.com/embed/61fda8b533c09d0015b44e18"
                         style="
                             width: 54rem;
-                            height: 6.875rem;
+                            height: 28.5rem;
+                            margin: 1em 0;
+                            max-width: 100%;
+                        "
+                        frameborder="0"
+                    ></iframe>
+
+                    <h2 class="component-subheading">1. Input textbox</h2>
+                    <div class="website-input-container">
+                        <label for="" class="input-label">Label</label>
+                        <input
+                            type="text"
+                            name=""
+                            id=""
+                            placeholder="Enter text here..."
+                            class="input"
+                        />
+                    </div>
+                    <p class="component-text">
+                        The above input textbox is completely customizable,
+                        using the css-variables given at the top.
+                    </p>
+                    <iframe
+                        src="https://www.thiscodeworks.com/embed/61fdadb133c09d0015b44e1d"
+                        style="
+                            width: 54rem;
+                            height: 7.65rem;
+                            margin: 1em 0;
+                            max-width: 100%;
+                        "
+                        frameborder="0"
+                    ></iframe>
+
+                    <h2 class="component-subheading">2. Input Validation</h2>
+                    <div class="website-input-container">
+                        <label for="" class="input-label">Label</label>
+                        <input
+                            type="text"
+                            name=""
+                            id=""
+                            placeholder="Enter text here..."
+                            class="input input-error"
+                        />
+                    </div>
+                    <div class="website-input-container">
+                        <label for="" class="input-label">Label</label>
+                        <input
+                            type="text"
+                            name=""
+                            id=""
+                            placeholder="Enter text here..."
+                            class="input input-warn"
+                        />
+                    </div>
+                    <div class="website-input-container">
+                        <label for="" class="input-label">Label</label>
+                        <input
+                            type="text"
+                            name=""
+                            id=""
+                            placeholder="Enter text here..."
+                            class="input input-success"
+                        />
+                    </div>
+                    <p class="component-text">
+                        By default HTML code for red error textbox is given
+                        below, hence class
+                        <span class="code-highlight">input-error</span> in input
+                        element. To use the yellow warning textbox, replace
+                        class
+                        <span class="code-highlight">input-error</span> with
+                        class <span class="code-highlight">input-warn</span>. To
+                        use the green success textbox, replace class with
+                        <span class="code-highlight">input-success</span>. All
+                        these input textboxes are completely customizable, using
+                        the css-variables given at the top.
+                    </p>
+                    <iframe
+                        src="https://www.thiscodeworks.com/embed/61fdae4933c09d0015b44e1e"
+                        style="
+                            width: 54rem;
+                            height: 7.65rem;
                             margin: 1em 0;
                             max-width: 100%;
                         "
@@ -169,18 +243,21 @@
                     ></iframe>
 
                     <div class="component-nav-container">
-                        <a href="/index.html" class="component-nav-link">
+                        <a
+                            href="/Components/Image/image.html"
+                            class="component-nav-link"
+                        >
                             <i class="material-icons component-nav-arrow">
                                 arrow_left
                             </i>
-                            <span>Home</span>
+                            <span>Image</span>
                         </a>
                         <a
-                            href="/Components/Avatar/avatar.html"
+                            href="/Components/Navigation/navigation.html"
                             class="component-nav-link"
                         >
-                            <span>Avatar</span
-                            ><i class="material-icons component-nav-arrow">
+                            <span>Navigation</span>
+                            <i class="material-icons component-nav-arrow">
                                 arrow_right
                             </i>
                         </a>
