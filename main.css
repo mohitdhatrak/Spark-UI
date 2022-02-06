@@ -281,7 +281,8 @@ body {
 
 .component-content-container {
     width: 75%;
-    margin-left: 2rem;
+    /* margin-left: 2rem; use this if you plan to bring a right side nav too */
+    margin: 0 auto;
     padding: 2em;
     max-width: 100%;
 }
@@ -307,14 +308,14 @@ body {
 @media screen and (min-width: 858px) and (max-width: 991px) {
     .component-content-container {
         width: 70%;
-        margin-left: 1em;
+        margin-left: 1.5em;
         padding: 1.5em;
         max-width: 100%;
     }
 }
 
 .component-nav-container {
-    width: 54rem;
+    width: 45rem;
     max-width: 100%;
     margin: 2em 0;
     margin-top: 1.5em;
@@ -373,6 +374,13 @@ h2.component-subheading {
     padding: 0.1em 0.3em;
     border-radius: 0.4em;
     margin: 0 0.2em;
+}
+
+.code-snippet {
+    width: 45rem;
+    height: 6.8rem;
+    margin: 1em 0;
+    max-width: 100%;
 }
 
 /* website card component section */
