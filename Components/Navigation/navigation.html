@@ -4,7 +4,14 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Spark UI</title>
+        <meta name="author" content="Mohit Dhatrak" />
+        <meta name="title" content="Navigation Component" />
+        <meta
+            name="description"
+            content="The navigation component can as be customized as needed, using given css-variables. It 2 main types, movable navigation bar and fixed navigation bar. Both these types have 2 styles of navigation bars too, standard and short."
+        />
+        <meta name="keywords" content="HTML, CSS, Component library, UI" />
+        <title>Spark UI | Navigation</title>
         <link
             rel="shortcut icon"
             href="/Images/spark-ui-favicon.png"
@@ -12,16 +19,10 @@
         />
         <link rel="stylesheet" href="/Components/Navigation/navigation.css" />
         <link rel="stylesheet" href="/main.css" />
-        <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/icon?family=Material+Icons"
-        />
     </head>
     <body>
-        <!-- classes - navigation-standard, navigation-short, navigation-fixed to be used same html  -->
-
         <!-- header same as landing page -->
-        <nav aria-label="Top bar" class="landing-header">
+        <nav aria-label="Top navigation" class="landing-header">
             <a href="/index.html" class="landing-header-link">
                 <img
                     src="/Images/spark-ui-logo.png"
@@ -40,16 +41,22 @@
             </a>
         </nav>
 
-        <div class="docs-body-container">
-            <div class="side-nav-container">
+        <main class="docs-body-container">
+            <section class="side-nav-container">
                 <aside aria-label="Mail menu" class="drawer drawer-scroll">
                     <h3 class="nested-drawer-title">Getting Started</h3>
-                    <div class="drawer-links-container nested-drawer">
+                    <nav
+                        aria-label="Side navigation"
+                        class="drawer-links-container nested-drawer"
+                    >
                         <a href="/docs.html" class="drawer-link">Usage</a>
-                    </div>
+                    </nav>
                     <br />
                     <h3 class="nested-drawer-title">Components</h3>
-                    <div class="drawer-links-container nested-drawer">
+                    <nav
+                        aria-label="Side navigation"
+                        class="drawer-links-container nested-drawer"
+                    >
                         <a
                             href="/Components/Avatar/avatar.html"
                             class="drawer-link"
@@ -103,13 +110,16 @@
                             class="drawer-link"
                             >Toast</a
                         >
-                    </div>
+                    </nav>
                 </aside>
-            </div>
+            </section>
 
-            <div>
-                <div class="component-content-container">
-                    <div class="component-nav-container">
+            <section>
+                <article class="component-content-container">
+                    <nav
+                        aria-label="On-page navigation"
+                        class="component-nav-container"
+                    >
                         <a
                             href="/Components/Modal/modal.html"
                             class="component-nav-link"
@@ -128,7 +138,7 @@
                                 arrow_right
                             </i>
                         </a>
-                    </div>
+                    </nav>
 
                     <h1 class="component-heading">Navigation</h1>
 
@@ -160,9 +170,7 @@
                         icon-sizes, just use the below given css-variables in
                         <span class="code-highlight">:root</span> selector of
                         your CSS file. No need to use these variables if you
-                        wish to use the navigation as it is. For the given
-                        download, print, etc. icons to be visible, you need to
-                        link the given google-icons stylesheet in your HTML too.
+                        wish to use the navigation as it is.
                     </p>
                     <iframe
                         src="https://www.thiscodeworks.com/embed/61ffde3e4dd44f0015f3cc2f"
@@ -170,22 +178,14 @@
                         frameborder="0"
                         class="code-snippet"
                     ></iframe>
-                    <h3 class="component-subheading">
-                        Google-icons CSS - HTML link tag
-                    </h3>
-                    <iframe
-                        src="https://www.thiscodeworks.com/embed/61fbdefd6ab14d0015c32d68"
-                        frameborder="0"
-                        class="code-snippet"
-                    ></iframe>
 
                     <h2 class="component-subheading">
-                        1. Standard and Short navigation
+                        1. Movable standard and short navigation
                     </h2>
                     <div class="website-nav-component-container">
                         <div class="navigation-text-container">
                             <nav
-                                aria-label="Top bar"
+                                aria-label="Top navigation"
                                 class="navigation navigation-standard"
                             >
                                 <button class="navigation-button">
@@ -260,7 +260,7 @@
                     <div class="website-nav-component-container">
                         <div class="navigation-text-container">
                             <nav
-                                aria-label="Top bar"
+                                aria-label="Top navigation"
                                 class="navigation navigation-short"
                             >
                                 <button class="navigation-button">
@@ -332,7 +332,7 @@
                         </div>
                     </div>
                     <p class="component-text">
-                        This navigation is not fixed at top, as you scroll it
+                        Movable navigation is not fixed at top, as you scroll it
                         moves out of the visible screen, you can try scrolling
                         above (text is given for demo, html provided below
                         contains only the navigation component). There are 2
@@ -350,11 +350,13 @@
                         class="code-snippet"
                     ></iframe>
 
-                    <h2 class="component-subheading">2. Fixed navigation</h2>
+                    <h2 class="component-subheading">
+                        2. Fixed standard and short navigation
+                    </h2>
                     <div class="website-nav-component-container">
                         <div class="navigation-text-container">
                             <nav
-                                aria-label="Top bar"
+                                aria-label="Top navigation"
                                 class="navigation navigation-fixed navigation-standard"
                             >
                                 <button class="navigation-button">
@@ -429,7 +431,7 @@
                     <div class="website-nav-component-container">
                         <div class="navigation-text-container">
                             <nav
-                                aria-label="Top bar"
+                                aria-label="Top navigation"
                                 class="navigation navigation-fixed navigation-short"
                             >
                                 <button class="navigation-button">
@@ -505,9 +507,9 @@
                         it stays fixed at the top, you can try scrolling above
                         (text is given for demo, html provided below contains
                         only the navigation component). There are 2 options for
-                        navigation, standard fixed and short fixed. HTML code
-                        for standard one is provided below. To use the short
-                        fixed navigation component, just replace class
+                        navigation, standard and short. HTML code for standard
+                        one is provided below. To use the short navigation
+                        component, just replace class
                         <span class="code-highlight">navigation-standard</span>
                         with class
                         <span class="code-highlight">navigation-short</span>
@@ -528,7 +530,10 @@
                         class="code-snippet"
                     ></iframe>
 
-                    <div class="component-nav-container">
+                    <nav
+                        aria-label="On-page navigation"
+                        class="component-nav-container"
+                    >
                         <a
                             href="/Components/Modal/modal.html"
                             class="component-nav-link"
@@ -547,9 +552,9 @@
                                 arrow_right
                             </i>
                         </a>
-                    </div>
-                </div>
-            </div>
-        </div>
+                    </nav>
+                </article>
+            </section>
+        </main>
     </body>
 </html>
