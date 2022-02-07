@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+    --toast-bg-color: #333;
+    --toast-color: #fff;
+    --toast-icon-color: #fff;
+    --toast-button-color: #93c5fd;
+    /* focus color is seen when you use tab key to access buttons or links */
+    --toast-button-focus-outline-color: #fff;
+}
+
+.toast {
+    width: 30rem;
+    max-width: 95%;
+    padding: 0.8em 1.2em;
+    padding-right: 0.6em;
+    background-color: var(--toast-bg-color);
+    border-radius: 0.3em;
+    position: fixed;
+    bottom: 1.2rem;
+    right: 1.2rem;
+
+    /* flex - properties */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.toast.toast-left {
+    right: none;
+    left: 1.2rem;
+}
+
+@media screen and (max-width: 1030px) {
+    .toast {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 570px) and (max-width: 860px) {
+    .toast {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 569px) {
+    .toast {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .toast {
+        width: 80%;
+    }
+
+    .toast-button:nth-child(1) {
+        display: none;
+    }
+}
+
+.toast-text {
+    font-size: 1.2rem;
+    color: var(--toast-color);
+    margin: 0;
+
+    /* flex - properties */
+    display: flex;
+    align-items: center;
+}
+
+.toast-buttons-container {
+    /* flex - properties */
+    display: flex;
+    gap: 1em;
+}
+
+.toast-button {
+    width: max-content;
+    font-size: 1.1rem;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    padding: 0.2rem;
+    color: var(--toast-button-color);
+    text-transform: uppercase;
+
+    /* flex - properties */
+    display: flex;
+    align-items: center;
+}
+
+.toast-button:focus {
+    outline: var(--toast-button-focus-outline-color) solid 2px;
+}
+
+.toast-svg-icons {
+    color: var(--toast-icon-color);
+}

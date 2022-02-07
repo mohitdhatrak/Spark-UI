@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Mohit Dhatrak" />
+        <meta name="title" content="Toast/Snackbar Component" />
+        <meta
+            name="description"
+            content="The toast component can as be customized as needed, using given css-variables. It can be positioned at the bottom-right or bottom-left of the page."
+        />
+        <meta name="keywords" content="HTML, CSS, Component library, UI" />
+        <title>Spark UI | Toast</title>
+        <link
+            rel="shortcut icon"
+            href="/Images/spark-ui-favicon.png"
+            type="image/png"
+        />
+        <link rel="stylesheet" href="/Components/Toast/toast.css" />
+        <link rel="stylesheet" href="/main.css" />
+    </head>
+    <body>
+        <!-- classes -  toast-left, toast-right -->
+
+        <!-- header same as landing page -->
+        <nav aria-label="Top navigation" class="landing-header">
+            <a href="/index.html" class="landing-header-link">
+                <img
+                    src="/Images/spark-ui-logo.png"
+                    alt="Website Logo"
+                    class="landing-header-logo"
+                />
+                <span class="landing-header-title">Spark UI</span>
+            </a>
+            <a
+                href="https://mohitdhatrak.bio.link/"
+                target="_blank"
+                class="landing-header-link"
+            >
+                <span>Let's Connect</span>
+                <i class="material-icons landing-svg-icon">public</i>
+            </a>
+        </nav>
+
+        <main class="docs-body-container">
+            <section class="side-nav-container">
+                <aside aria-label="Mail menu" class="drawer drawer-scroll">
+                    <h3 class="nested-drawer-title">Getting Started</h3>
+                    <nav
+                        aria-label="Side navigation"
+                        class="drawer-links-container nested-drawer"
+                    >
+                        <a href="/docs.html" class="drawer-link">Usage</a>
+                    </nav>
+                    <br />
+                    <h3 class="nested-drawer-title">Components</h3>
+                    <nav
+                        aria-label="Side navigation"
+                        class="drawer-links-container nested-drawer"
+                    >
+                        <a
+                            href="/Components/Avatar/avatar.html"
+                            class="drawer-link"
+                            >Avatar</a
+                        >
+                        <a
+                            href="/Components/Alert/alert.html"
+                            class="drawer-link"
+                            >Alert</a
+                        >
+                        <a
+                            href="/Components/Badge/badge.html"
+                            class="drawer-link"
+                            >Badge</a
+                        >
+                        <a
+                            href="/Components/Button/button.html"
+                            class="drawer-link"
+                            >Button</a
+                        >
+                        <a href="/Components/Card/card.html" class="drawer-link"
+                            >Card</a
+                        >
+                        <a
+                            href="/Components/Image/image.html"
+                            class="drawer-link"
+                            >Image</a
+                        >
+                        <a
+                            href="/Components/Input/input.html"
+                            class="drawer-link"
+                            >Input</a
+                        >
+                        <a
+                            href="/Components/Modal/modal.html"
+                            class="drawer-link"
+                            >Modal</a
+                        >
+                        <a
+                            href="/Components/Navigation/navigation.html"
+                            class="drawer-link"
+                            >Navigation</a
+                        >
+                        <a
+                            href="/Components/Rating/rating.html"
+                            class="drawer-link"
+                            >Rating</a
+                        >
+                        <a
+                            href="/Components/Toast/toast.html"
+                            class="drawer-link"
+                            >Toast</a
+                        >
+                    </nav>
+                </aside>
+            </section>
+
+            <section>
+                <article class="component-content-container">
+                    <nav
+                        aria-label="On-page navigation"
+                        class="component-nav-container"
+                    >
+                        <a
+                            href="/Components/Rating/rating.html"
+                            class="component-nav-link"
+                        >
+                            <i class="material-icons component-nav-arrow">
+                                arrow_left
+                            </i>
+                            <span>Rating</span>
+                        </a>
+                        <a href="/index.html" class="component-nav-link">
+                            <span>Back to home</span>
+                            <!-- <i class="material-icons component-nav-arrow">
+                                arrow_right
+                            </i> -->
+                        </a>
+                    </nav>
+
+                    <h1 class="component-heading">Toast</h1>
+
+                    <h3 class="component-subheading">
+                        Toast component CSS - import url
+                    </h3>
+                    <iframe
+                        src="https://www.thiscodeworks.com/embed/62003f144dd44f0015f3ccce"
+                        frameborder="0"
+                        class="code-snippet"
+                    ></iframe>
+
+                    <h3 class="component-subheading">
+                        Toast component CSS - HTML link tag
+                    </h3>
+                    <iframe
+                        src="https://www.thiscodeworks.com/embed/62003f4b4dd44f0015f3cccf"
+                        frameborder="0"
+                        class="code-snippet"
+                    ></iframe>
+
+                    <h2 class="component-subheading">
+                        How to modify component as per need !
+                    </h2>
+                    <p class="component-text">
+                        The toast component has default colors, icon-size, etc.
+                        For changing any of these styles as per your need, just
+                        use the given css-variable below in
+                        <span class="code-highlight">:root</span> selector of
+                        your CSS file. No need to use these variables if you
+                        wish to use the toast as it is.
+                    </p>
+                    <iframe
+                        src="https://www.thiscodeworks.com/embed/620044c44dd44f0015f3ccd8"
+                        style="height: 11.1rem"
+                        frameborder="0"
+                        class="code-snippet"
+                    ></iframe>
+
+                    <h2 class="component-subheading">
+                        Standard toast with buttons
+                    </h2>
+                    <div class="website-toast">
+                        <p class="toast-text">Oops! An error occurred</p>
+                        <div class="toast-buttons-container">
+                            <button class="toast-button">Retry</button>
+                            <button class="toast-button">
+                                <i class="material-icons toast-svg-icons"
+                                    >close</i
+                                >
+                            </button>
+                        </div>
+                    </div>
+                    <p class="component-text">
+                        By default the toast will be displayed at the
+                        bottom-right of the page, as class
+                        <span class="code-highlight">toast-right</span> is used
+                        in the outermost
+                        <span class="code-highlight">&lt;div&gt;</span>. To
+                        change position of toast to bottom left, replace class
+                        <span class="code-highlight">toast-right</span> with
+                        <span class="code-highlight">toast-left</span>. This
+                        component is also responsive, it adjusts width according
+                        to screen-size.
+                    </p>
+                    <iframe
+                        src="https://www.thiscodeworks.com/embed/620028ee4dd44f0015f3ccaa"
+                        style="height: 13.6rem"
+                        frameborder="0"
+                        class="code-snippet"
+                    ></iframe>
+
+                    <nav
+                        aria-label="On-page navigation"
+                        class="component-nav-container"
+                    >
+                        <a
+                            href="/Components/Rating/rating.html"
+                            class="component-nav-link"
+                        >
+                            <i class="material-icons component-nav-arrow">
+                                arrow_left
+                            </i>
+                            <span>Rating</span>
+                        </a>
+                        <a href="/index.html" class="component-nav-link">
+                            <span>Back to home</span>
+                            <!-- <i class="material-icons component-nav-arrow">
+                                arrow_right
+                            </i> -->
+                        </a>
+                    </nav>
+                </article>
+            </section>
+        </main>
+    </body>
+</html>
