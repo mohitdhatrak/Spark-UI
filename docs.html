@@ -4,21 +4,24 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Spark UI</title>
+        <meta name="author" content="Mohit Dhatrak" />
+        <meta name="title" content="Getting started" />
+        <meta
+            name="description"
+            content="How to get started with using Spark UI component library. Follow few simple steps to start using any component available in the library."
+        />
+        <meta name="keywords" content="HTML, CSS, Component library, UI" />
+        <title>Spark UI | Usage</title>
         <link
             rel="shortcut icon"
             href="/Images/spark-ui-favicon.png"
             type="image/png"
         />
         <link rel="stylesheet" href="/main.css" />
-        <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/icon?family=Material+Icons"
-        />
     </head>
     <body>
         <!-- header same as landing page -->
-        <nav aria-label="Top bar" class="landing-header">
+        <nav aria-label="Top navigation" class="landing-header">
             <a href="/index.html" class="landing-header-link">
                 <img
                     src="/Images/spark-ui-logo.png"
@@ -37,16 +40,22 @@
             </a>
         </nav>
 
-        <div class="docs-body-container">
-            <div class="side-nav-container">
+        <main class="docs-body-container">
+            <section class="side-nav-container">
                 <aside aria-label="Mail menu" class="drawer drawer-scroll">
                     <h3 class="nested-drawer-title">Getting Started</h3>
-                    <div class="drawer-links-container nested-drawer">
+                    <nav
+                        aria-label="Side navigation"
+                        class="drawer-links-container nested-drawer"
+                    >
                         <a href="/docs.html" class="drawer-link">Usage</a>
-                    </div>
+                    </nav>
                     <br />
                     <h3 class="nested-drawer-title">Components</h3>
-                    <div class="drawer-links-container nested-drawer">
+                    <nav
+                        aria-label="Side navigation"
+                        class="drawer-links-container nested-drawer"
+                    >
                         <a
                             href="/Components/Avatar/avatar.html"
                             class="drawer-link"
@@ -100,13 +109,16 @@
                             class="drawer-link"
                             >Toast</a
                         >
-                    </div>
+                    </nav>
                 </aside>
-            </div>
+            </section>
 
-            <div>
-                <div class="component-content-container">
-                    <div class="component-nav-container">
+            <section>
+                <article class="component-content-container">
+                    <nav
+                        aria-label="On-page navigation"
+                        class="component-nav-container"
+                    >
                         <a href="/index.html" class="component-nav-link">
                             <i class="material-icons component-nav-arrow">
                                 arrow_left
@@ -122,7 +134,7 @@
                                 arrow_right
                             </i>
                         </a>
-                    </div>
+                    </nav>
 
                     <h1 class="component-heading">Usage</h1>
 
@@ -159,24 +171,12 @@
                     </p>
 
                     <p class="component-text">
-                        <span class="code-highlight">Disclaimer:</span>
-                        In most of the components icons used are from google
-                        icons website. So ideally with components those
-                        components you need to import the given stylesheet in
-                        your HTML code too. Also, just to be clear, you can
-                        replace or remove the icons from the element too as per
-                        your choice, just by deleting or modifying given html.
-                        Not just icons, you can modify any component by removing
+                        Also, just to be clear, you can replace or remove any
+                        icons you don't need from the element as per your
+                        choice, just by deleting or modifying given html. Not
+                        just icons, you can modify any component by removing
                         required html content.
                     </p>
-                    <h3 class="component-subheading">
-                        Google-icons CSS - HTML link tag
-                    </h3>
-                    <iframe
-                        src="https://www.thiscodeworks.com/embed/61fbdefd6ab14d0015c32d68"
-                        frameborder="0"
-                        class="code-snippet"
-                    ></iframe>
 
                     <p class="component-text">
                         If you are viewing on a laptop or big screen, you can
@@ -216,7 +216,10 @@
                         social handles (link top right corner).
                     </p>
 
-                    <div class="component-nav-container">
+                    <nav
+                        aria-label="On-page navigation"
+                        class="component-nav-container"
+                    >
                         <a href="/index.html" class="component-nav-link">
                             <i class="material-icons component-nav-arrow">
                                 arrow_left
@@ -232,9 +235,9 @@
                                 arrow_right
                             </i>
                         </a>
-                    </div>
-                </div>
-            </div>
-        </div>
+                    </nav>
+                </article>
+            </section>
+        </main>
     </body>
 </html>

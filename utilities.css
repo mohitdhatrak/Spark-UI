@@ -1,3 +1,6 @@
+/* remember you need to import this css not link in html as this needs to be in each component css */
+/* implementation pending */
+
 .flex-center {
     display: flex;
     align-items: center;

@@ -4,7 +4,14 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Spark UI</title>
+        <meta name="author" content="Mohit Dhatrak" />
+        <meta name="title" content="Avatar Component" />
+        <meta
+            name="description"
+            content="The avatar component can as be customized as needed, using given css-variables. It is available in 5 different sizes too."
+        />
+        <meta name="keywords" content="HTML, CSS, Component library, UI" />
+        <title>Spark UI | Avatar</title>
         <link
             rel="shortcut icon"
             href="/Images/spark-ui-favicon.png"
@@ -19,7 +26,7 @@
     </head>
     <body>
         <!-- header same as landing page -->
-        <nav aria-label="Top bar" class="landing-header">
+        <nav aria-label="Top navigation" class="landing-header">
             <a href="/index.html" class="landing-header-link">
                 <img
                     src="/Images/spark-ui-logo.png"
@@ -38,16 +45,22 @@
             </a>
         </nav>
 
-        <div class="docs-body-container">
-            <div class="side-nav-container">
+        <main class="docs-body-container">
+            <section class="side-nav-container">
                 <aside aria-label="Mail menu" class="drawer drawer-scroll">
                     <h3 class="nested-drawer-title">Getting Started</h3>
-                    <div class="drawer-links-container nested-drawer">
+                    <nav
+                        aria-label="Side navigation"
+                        class="drawer-links-container nested-drawer"
+                    >
                         <a href="/docs.html" class="drawer-link">Usage</a>
-                    </div>
+                    </nav>
                     <br />
                     <h3 class="nested-drawer-title">Components</h3>
-                    <div class="drawer-links-container nested-drawer">
+                    <nav
+                        aria-label="Side navigation"
+                        class="drawer-links-container nested-drawer"
+                    >
                         <a
                             href="/Components/Avatar/avatar.html"
                             class="drawer-link"
@@ -101,13 +114,16 @@
                             class="drawer-link"
                             >Toast</a
                         >
-                    </div>
+                    </nav>
                 </aside>
-            </div>
+            </section>
 
-            <div>
-                <div class="component-content-container">
-                    <div class="component-nav-container">
+            <section>
+                <article class="component-content-container">
+                    <nav
+                        aria-label="On-page navigation"
+                        class="component-nav-container"
+                    >
                         <a href="/docs.html" class="component-nav-link">
                             <i class="material-icons component-nav-arrow">
                                 arrow_left
@@ -123,7 +139,7 @@
                                 arrow_right
                             </i>
                         </a>
-                    </div>
+                    </nav>
 
                     <h1 class="component-heading">Avatar</h1>
 
@@ -223,7 +239,10 @@
                         class="code-snippet"
                     ></iframe>
 
-                    <div class="component-nav-container">
+                    <nav
+                        aria-label="On-page navigation"
+                        class="component-nav-container"
+                    >
                         <a href="/docs.html" class="component-nav-link">
                             <i class="material-icons component-nav-arrow">
                                 arrow_left
@@ -239,9 +258,9 @@
                                 arrow_right
                             </i>
                         </a>
-                    </div>
-                </div>
-            </div>
-        </div>
+                    </nav>
+                </article>
+            </section>
+        </main>
     </body>
 </html>

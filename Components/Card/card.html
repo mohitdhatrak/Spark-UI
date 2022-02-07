@@ -4,7 +4,14 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Spark UI</title>
+        <meta name="author" content="Mohit Dhatrak" />
+        <meta name="title" content="Card Component" />
+        <meta
+            name="description"
+            content="The card component has 9 different variants, which can be customized too using given css-variables. Card types - basic vertical card, card with header, card with only icons or only buttons, card with text overlay, card with only text, card with badge, card with dismiss, basic horizontal card, card with shadow."
+        />
+        <meta name="keywords" content="HTML, CSS, Component library, UI" />
+        <title>Spark UI | Card</title>
         <link
             rel="shortcut icon"
             href="/Images/spark-ui-favicon.png"
@@ -12,17 +19,12 @@
         />
         <link rel="stylesheet" href="/Components/Card/card.css" />
         <link rel="stylesheet" href="/main.css" />
-        <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/icon?family=Material+Icons"
-        />
     </head>
     <body>
         <!-- olympics 7 cards have same html, last 2 have different html each -->
-        <!-- to get different cards, same html, use any 1 of the classes - 'card-vertical card-basic', 'card-vertical card-header-top', 'card-vertical card-only-icons', 'card-vertical card-only-buttons', 'card-vertical card-text-overlay', 'card-vertical card-only-text',  'card-horizontal card-basic', 'card-vertical card-with-badge', 'card-vertical card-with-dismiss'-->
 
         <!-- header same as landing page -->
-        <nav aria-label="Top bar" class="landing-header">
+        <nav aria-label="Top navigation" class="landing-header">
             <a href="/index.html" class="landing-header-link">
                 <img
                     src="/Images/spark-ui-logo.png"
@@ -41,16 +43,22 @@
             </a>
         </nav>
 
-        <div class="docs-body-container">
-            <div class="side-nav-container">
+        <main class="docs-body-container">
+            <section class="side-nav-container">
                 <aside aria-label="Mail menu" class="drawer drawer-scroll">
                     <h3 class="nested-drawer-title">Getting Started</h3>
-                    <div class="drawer-links-container nested-drawer">
+                    <nav
+                        aria-label="Side navigation"
+                        class="drawer-links-container nested-drawer"
+                    >
                         <a href="/docs.html" class="drawer-link">Usage</a>
-                    </div>
+                    </nav>
                     <br />
                     <h3 class="nested-drawer-title">Components</h3>
-                    <div class="drawer-links-container nested-drawer">
+                    <nav
+                        aria-label="Side navigation"
+                        class="drawer-links-container nested-drawer"
+                    >
                         <a
                             href="/Components/Avatar/avatar.html"
                             class="drawer-link"
@@ -104,13 +112,16 @@
                             class="drawer-link"
                             >Toast</a
                         >
-                    </div>
+                    </nav>
                 </aside>
-            </div>
+            </section>
 
-            <div>
-                <div class="component-content-container">
-                    <div class="component-nav-container">
+            <section>
+                <article class="component-content-container">
+                    <nav
+                        aria-label="On-page navigation"
+                        class="component-nav-container"
+                    >
                         <a
                             href="/Components/Button/button.html"
                             class="component-nav-link"
@@ -129,7 +140,7 @@
                                 arrow_right
                             </i>
                         </a>
-                    </div>
+                    </nav>
 
                     <h1 class="component-heading">Card</h1>
 
@@ -171,21 +182,11 @@
                         given css-variable
                         <span class="code-highlight">--card-box-shadow</span>.
                         No need to use these variables if you wish to use the
-                        card as it is. For the given heart, share, more icons to
-                        work, you need to link the given google-icons stylesheet
-                        in your HTML too.
+                        card as it is.
                     </p>
                     <iframe
                         src="https://www.thiscodeworks.com/embed/61faa696b783be0015bbaef2"
                         style="height: 27.18rem"
-                        frameborder="0"
-                        class="code-snippet"
-                    ></iframe>
-                    <h3 class="component-subheading">
-                        Google-icons CSS - HTML link tag
-                    </h3>
-                    <iframe
-                        src="https://www.thiscodeworks.com/embed/61fbdefd6ab14d0015c32d68"
                         frameborder="0"
                         class="code-snippet"
                     ></iframe>
@@ -789,7 +790,10 @@
                         class="code-snippet"
                     ></iframe>
 
-                    <div class="component-nav-container">
+                    <nav
+                        aria-label="On-page navigation"
+                        class="component-nav-container"
+                    >
                         <a
                             href="/Components/Button/button.html"
                             class="component-nav-link"
@@ -808,9 +812,9 @@
                                 arrow_right
                             </i>
                         </a>
-                    </div>
-                </div>
-            </div>
-        </div>
+                    </nav>
+                </article>
+            </section>
+        </main>
     </body>
 </html>
