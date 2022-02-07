@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+    /* outline stars css variables */
+    --rating-outline-bg-color: transparent;
+    --rating-outline-icon-color: #000;
+    --rating-outline-icon-size: 2.5rem;
+    --rating-outline-icon-hover-bg-color: transparent;
+    --rating-outline-icon-hover-color: #d97706;
+    --rating-outline-gap-between: 0rem;
+    /* filled stars css variables */
+    --rating-filled-bg-color: transparent;
+    --rating-filled-icon-color: #9ca3af;
+    --rating-filled-icon-size: 2.5rem;
+    --rating-filled-icon-hover-bg-color: transparent;
+    --rating-filled-icon-hover-color: #d97706;
+    --rating-filled-gap-between: 0rem;
+}
+
+.rating {
+    width: max-content;
+    max-width: 100%;
+
+    /* flex - properties */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--rating-outline-gap-between);
+}
+
+.rating.rating-filled {
+    gap: var(--rating-filled-gap-between);
+}
+
+.rating-svg-icons {
+    cursor: pointer;
+    background-color: var(--rating-outline-bg-color);
+    color: var(--rating-outline-icon-color);
+    font-size: var(--rating-outline-icon-size) !important;
+}
+
+.rating-filled .rating-svg-icons {
+    background-color: var(--rating-filled-bg-color);
+    color: var(--rating-filled-icon-color);
+    font-size: var(--rating-filled-icon-size) !important;
+}
+
+.rating-svg-icons:hover {
+    background-color: var(--rating-outline-icon-hover-bg-color);
+    color: var(--rating-outline-icon-hover-color);
+}
+
+.rating-filled .rating-svg-icons:hover {
+    background-color: var(--rating-filled-icon-hover-bg-color);
+    color: var(--rating-filled-icon-hover-color);
+}

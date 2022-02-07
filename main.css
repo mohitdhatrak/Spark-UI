@@ -495,6 +495,15 @@ h2.component-subheading {
     margin-bottom: 1.8rem;
 }
 
+/* website rating component section */
+
+.website-rating-container {
+    width: max-content;
+    max-width: 100%;
+    margin: 2.4em 0;
+    margin-bottom: 1.2rem;
+}
+
 /* website toast component section */
 
 .website-toast {
