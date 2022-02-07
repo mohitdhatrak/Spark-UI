@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+    /* common modal css variables */
+    --modal-width: 22rem;
+    --modal-bg-color: #bae6fd;
+    --modal-border: 1px solid #000;
+    --modal-border-radius: 0.5em;
+    --modal-button-color: #000;
+    --modal-button-hover-color: #7dd3fc;
+    --modal-button-hover-border-radius: 0.4em;
+    /* simple modal css variables */
+    --simple-modal-height: 12rem;
+    --simple-modal-icon-color: #525252;
+    --simple-modal-icon-size: 3rem;
+    --simple-modal-divider-border: 1px solid #000;
+    /* confirmation modal css variables */
+    --confirmation-modal-height: 12rem;
+    --confirmation-modal-divider-border: 1px solid #000;
+    /* focus color is seen when you use tab key to access buttons or links */
+    --modal-button-focus-outline-color: #000;
+}
+
+.modal {
+    width: var(--modal-width);
+    background-color: var(--modal-bg-color);
+    border: var(--modal-border);
+    border-radius: var(--modal-border-radius);
+
+    /* flex - properties */
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+}
+
+.modal.simple-modal {
+    gap: 0;
+}
+
+.modal.confirmation-modal {
+    gap: 0;
+}
+
+.modal-title {
+    margin: 0;
+    width: 100%;
+    padding: 0.8em 1em;
+    padding-bottom: 0;
+}
+
+.simple-modal .modal-title {
+    border-bottom: var(--simple-modal-divider-border);
+    padding-bottom: 0.8em;
+}
+
+.confirmation-modal .modal-title {
+    padding: 0.8em 1em;
+}
+
+.modal-body {
+    margin: 0;
+    width: 100%;
+    padding: 0 1.5em;
+    overflow-y: auto;
+}
+
+.confirmation-modal .modal-body {
+    height: var(--confirmation-modal-height);
+    border-top: var(--confirmation-modal-divider-border);
+    border-bottom: var(--confirmation-modal-divider-border);
+    padding: 1rem;
+
+    /* flex - properties */
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+}
+
+.modal-buttons-container {
+    width: 100%;
+    padding: 0.8em 1em;
+
+    /* flex - properties */
+    display: flex;
+    gap: 0.5em;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.alert-modal .modal-buttons-container {
+    padding-top: 0;
+}
+
+.simple-modal .modal-buttons-container {
+    overflow-y: auto;
+    height: var(--simple-modal-height);
+}
+
+.modal-buttons-container.modal-buttons-stacked {
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.modal-button {
+    font-size: 1.2rem;
+    color: var(--modal-button-color);
+    padding: 0.5rem;
+    cursor: pointer;
+    background-color: transparent;
+    border: 0;
+    text-align: start;
+}
+
+.modal-button:focus {
+    outline: var(--modal-button-focus-outline-color) solid 2px;
+}
+
+.modal-button:hover {
+    background-color: var(--modal-button-hover-color);
+    border-radius: var(--modal-button-hover-border-radius);
+}
+
+.simple-modal .modal-button {
+    width: 100%;
+
+    /* flex - properties */
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.confirmation-modal .modal-body .modal-button {
+    width: 100%;
+
+    /* flex - properties */
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.modal-buttons-container .modal-button {
+    text-transform: uppercase;
+    font-weight: 450;
+}
+
+.simple-modal .modal-buttons-container .modal-button {
+    text-transform: none;
+}
+
+.modal-svg-icons {
+    font-size: var(--simple-modal-icon-size) !important;
+    color: var(--simple-modal-icon-color);
+}
+
+.modal-form {
+    width: 100%;
+}
+
+.modal-input {
+    cursor: pointer;
+    margin: 0;
+    transform: scale(1.5);
+}
+
+.modal-input:focus {
+    outline: var(--modal-button-focus-outline-color) solid 2px;
+}

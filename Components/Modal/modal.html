@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Spark UI</title>
+        <link
+            rel="shortcut icon"
+            href="/Images/spark-ui-favicon.png"
+            type="image/png"
+        />
+        <link rel="stylesheet" href="/Components/Modal/modal.css" />
+        <link rel="stylesheet" href="/main.css" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        />
+    </head>
+    <body>
+        <!-- all 3 html files different, use modal-buttons-stacked class in buttons container to get stacked behaviour of buttons in 1 and 3 types-->
+        <!-- height can be decided by user for type 2 and 3 modals if he wants scroll bar in options, no height to be given for type 1 -->
+
+        <!-- header same as landing page -->
+        <nav aria-label="Top bar" class="landing-header">
+            <a href="/index.html" class="landing-header-link">
+                <img
+                    src="/Images/spark-ui-logo.png"
+                    alt="Website Logo"
+                    class="landing-header-logo"
+                />
+                <span class="landing-header-title">Spark UI</span>
+            </a>
+            <a
+                href="https://mohitdhatrak.bio.link/"
+                target="_blank"
+                class="landing-header-link"
+            >
+                <span>Let's Connect</span>
+                <i class="material-icons landing-svg-icon">public</i>
+            </a>
+        </nav>
+
+        <div class="docs-body-container">
+            <div class="side-nav-container">
+                <aside aria-label="Mail menu" class="drawer drawer-scroll">
+                    <h3 class="nested-drawer-title">Getting Started</h3>
+                    <div class="drawer-links-container nested-drawer">
+                        <a href="/docs.html" class="drawer-link">Usage</a>
+                    </div>
+                    <br />
+                    <h3 class="nested-drawer-title">Components</h3>
+                    <div class="drawer-links-container nested-drawer">
+                        <a
+                            href="/Components/Avatar/avatar.html"
+                            class="drawer-link"
+                            >Avatar</a
+                        >
+                        <a
+                            href="/Components/Alert/alert.html"
+                            class="drawer-link"
+                            >Alert</a
+                        >
+                        <a
+                            href="/Components/Badge/badge.html"
+                            class="drawer-link"
+                            >Badge</a
+                        >
+                        <a
+                            href="/Components/Button/button.html"
+                            class="drawer-link"
+                            >Button</a
+                        >
+                        <a href="/Components/Card/card.html" class="drawer-link"
+                            >Card</a
+                        >
+                        <a
+                            href="/Components/Image/image.html"
+                            class="drawer-link"
+                            >Image</a
+                        >
+                        <a
+                            href="/Components/Input/input.html"
+                            class="drawer-link"
+                            >Input</a
+                        >
+                        <a
+                            href="/Components/Modal/modal.html"
+                            class="drawer-link"
+                            >Modal</a
+                        >
+                        <a
+                            href="/Components/Navigation/navigation.html"
+                            class="drawer-link"
+                            >Navigation</a
+                        >
+                        <a
+                            href="/Components/Rating/rating.html"
+                            class="drawer-link"
+                            >Rating</a
+                        >
+                        <a
+                            href="/Components/Toast/toast.html"
+                            class="drawer-link"
+                            >Toast</a
+                        >
+                    </div>
+                </aside>
+            </div>
+
+            <div>
+                <div class="component-content-container">
+                    <div class="component-nav-container">
+                        <a
+                            href="/Components/Input/input.html"
+                            class="component-nav-link"
+                        >
+                            <i class="material-icons component-nav-arrow">
+                                arrow_left
+                            </i>
+                            <span>Input</span>
+                        </a>
+                        <a
+                            href="/Components/Navigation/navigation.html"
+                            class="component-nav-link"
+                        >
+                            <span>Navigation</span>
+                            <i class="material-icons component-nav-arrow">
+                                arrow_right
+                            </i>
+                        </a>
+                    </div>
+
+                    <h1 class="component-heading">Modal</h1>
+
+                    <h3 class="component-subheading">
+                        Modal component CSS - import url
+                    </h3>
+                    <iframe
+                        src="https://www.thiscodeworks.com/embed/6200fc814dd44f0015f3cdbb"
+                        frameborder="0"
+                        class="code-snippet"
+                    ></iframe>
+
+                    <h3 class="component-subheading">
+                        Modal component CSS - HTML link tag
+                    </h3>
+                    <iframe
+                        src="https://www.thiscodeworks.com/embed/6200fcb04dd44f0015f3cdbe"
+                        frameborder="0"
+                        class="code-snippet"
+                    ></iframe>
+
+                    <h2 class="component-subheading">
+                        How to modify component as per need !
+                    </h2>
+                    <p class="component-text">
+                        The modal component has many defaults like width,
+                        colors, borders-styles, icon-size, etc. For changing any
+                        of these styles as per your need, just use the below
+                        given css-variables in
+                        <span class="code-highlight">:root</span> selector of
+                        your CSS file. You can change the width of the modal by
+                        given
+                        <span class="code-highlight">--modal-width</span>
+                        variable. No need to use these variables if you wish to
+                        use the modal as it is.
+                    </p>
+                    <iframe
+                        src="https://www.thiscodeworks.com/embed/62010b9c4dd44f0015f3cdec"
+                        style="height: 21.5rem"
+                        frameborder="0"
+                        class="code-snippet"
+                    ></iframe>
+
+                    <h2 class="component-subheading">1. Alert modal</h2>
+                    <div class="website-modal-container">
+                        <div class="modal alert-modal">
+                            <h2 class="modal-title">Website Cookies</h2>
+                            <p class="modal-body">
+                                Lorem ipsum, dolor sit amet consectetur
+                                adipisicing elit. Assumenda reprehenderit ullam
+                                inventore doloremque cumque est totam! Nemo est
+                                iste, omnis corrupti reprehenderit laboriosam
+                                culpa error assumenda sequi qui molestias
+                                aspernatur.
+                            </p>
+                            <div class="modal-buttons-container">
+                                <button class="modal-button">Accept</button>
+                                <button class="modal-button">Reject</button>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="component-text">
+                        Alert modal can be customized using the common modal
+                        css-variables above.
+                    </p>
+                    <iframe
+                        src="https://www.thiscodeworks.com/embed/6200ff624dd44f0015f3cdc9"
+                        style="height: 14.45rem"
+                        frameborder="0"
+                        class="code-snippet"
+                    ></iframe>
+
+                    <h2 class="component-subheading">
+                        2. Alert modal with stacked buttons (for wider text)
+                    </h2>
+                    <div class="website-modal-container">
+                        <div class="modal alert-modal">
+                            <h2 class="modal-title">Website Cookies</h2>
+                            <p class="modal-body">
+                                Lorem ipsum, dolor sit amet consectetur
+                                adipisicing elit. Assumenda reprehenderit ullam
+                                inventore doloremque cumque est totam! Nemo est
+                                iste, omnis corrupti reprehenderit laboriosam
+                                culpa error assumenda sequi qui molestias
+                                aspernatur.
+                            </p>
+                            <div
+                                class="modal-buttons-container modal-buttons-stacked"
+                            >
+                                <button class="modal-button">
+                                    Accept and proceed
+                                </button>
+                                <button class="modal-button">
+                                    Reject and leave
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="component-text">
+                        If your alert modal needs to have more text in buttons,
+                        you can use this variant instead of above one, where the
+                        buttons are stacked. HTML given below.
+                    </p>
+                    <iframe
+                        src="https://www.thiscodeworks.com/embed/620106fa4dd44f0015f3cddb"
+                        style="height: 14.45rem"
+                        frameborder="0"
+                        class="code-snippet"
+                    ></iframe>
+
+                    <h2 class="component-subheading">3. Simple modal</h2>
+                    <div class="website-modal-container">
+                        <div class="modal simple-modal">
+                            <h2 class="modal-title">Choose any one</h2>
+                            <div class="modal-buttons-container">
+                                <button class="modal-button">
+                                    <i class="material-icons modal-svg-icons"
+                                        >account_circle</i
+                                    >
+                                    <span>Option 1</span>
+                                </button>
+                                <button class="modal-button">
+                                    <i class="material-icons modal-svg-icons"
+                                        >account_circle</i
+                                    >
+                                    <span>Option 2</span>
+                                </button>
+                                <button class="modal-button">
+                                    <i class="material-icons modal-svg-icons"
+                                        >account_circle</i
+                                    >
+                                    <span>Option 3</span>
+                                </button>
+                                <button class="modal-button">
+                                    <i class="material-icons modal-svg-icons"
+                                        >account_circle</i
+                                    >
+                                    <span>Option 4</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="component-text">
+                        This is a simple modal where you directly select the
+                        option, no confirmation buttons. If you have many
+                        options, you can give the component a fixed height,
+                        using css-variable
+                        <span class="code-highlight">--simple-modal-height</span
+                        >. This will automatically give it a scrollbar as shown
+                        (here height given is 12rem). If you have lesser options
+                        or want no scrollbar, put this value
+                        <span class="code-highlight"
+                            >--simple-modal-height: max-content;</span
+                        >. For the given icon to be visible, you need to link
+                        the given google-icons stylesheet in your HTML too. You
+                        can replace or remove icons too.
+                    </p>
+                    <iframe
+                        src="https://www.thiscodeworks.com/embed/62010aa24dd44f0015f3cde8"
+                        style="height: 20.4rem"
+                        frameborder="0"
+                        class="code-snippet"
+                    ></iframe>
+                    <h3 class="component-subheading">
+                        Google-icons CSS - HTML link tag
+                    </h3>
+                    <iframe
+                        src="https://www.thiscodeworks.com/embed/61fbdefd6ab14d0015c32d68"
+                        frameborder="0"
+                        class="code-snippet"
+                    ></iframe>
+
+                    <h2 class="component-subheading">4. Confirmation modal</h2>
+                    <div class="website-modal-container">
+                        <div class="modal confirmation-modal">
+                            <h2 class="modal-title">Confirm your choice</h2>
+                            <form onsubmit="return false" class="modal-form">
+                                <div class="modal-body">
+                                    <label class="modal-button"
+                                        ><input
+                                            type="radio"
+                                            name="options"
+                                            required
+                                            class="modal-input"
+                                        />Option 1</label
+                                    >
+                                    <label class="modal-button"
+                                        ><input
+                                            type="radio"
+                                            name="options"
+                                            required
+                                            class="modal-input"
+                                        />Option 2</label
+                                    >
+                                    <label class="modal-button"
+                                        ><input
+                                            type="radio"
+                                            name="options"
+                                            required
+                                            class="modal-input"
+                                        />Option 3</label
+                                    >
+                                    <label class="modal-button"
+                                        ><input
+                                            type="radio"
+                                            name="options"
+                                            required
+                                            class="modal-input"
+                                        />Option 4</label
+                                    >
+                                </div>
+                                <div class="modal-buttons-container">
+                                    <button class="modal-button" type="submit">
+                                        Confirm
+                                    </button>
+                                    <button class="modal-button" type="submit">
+                                        Cancel
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <p class="component-text">
+                        This is a simple modal with confirmation buttons. If you
+                        have many options, you can give the component a fixed
+                        height, using css-variable
+                        <span class="code-highlight"
+                            >--confirmation-modal-height</span
+                        >. This will automatically give it a scrollbar as shown
+                        (here height given is 12rem). If you have lesser options
+                        or want no scrollbar, put this value
+                        <span class="code-highlight"
+                            >--confirmation-modal-height: max-content;</span
+                        >.
+                    </p>
+                    <iframe
+                        src="https://www.thiscodeworks.com/embed/620108e14dd44f0015f3cde1"
+                        style="height: 39.1rem"
+                        frameborder="0"
+                        class="code-snippet"
+                    ></iframe>
+
+                    <h2 class="component-subheading">
+                        5. Confirmation modal with stacked buttons (for wider
+                        text)
+                    </h2>
+                    <div class="website-modal-container">
+                        <div class="modal confirmation-modal">
+                            <h2 class="modal-title">Confirm your choice</h2>
+                            <form onsubmit="return false" class="modal-form">
+                                <div class="modal-body">
+                                    <label class="modal-button"
+                                        ><input
+                                            type="radio"
+                                            name="options"
+                                            required
+                                            class="modal-input"
+                                        />Option 1</label
+                                    >
+                                    <label class="modal-button"
+                                        ><input
+                                            type="radio"
+                                            name="options"
+                                            required
+                                            class="modal-input"
+                                        />Option 2</label
+                                    >
+                                    <label class="modal-button"
+                                        ><input
+                                            type="radio"
+                                            name="options"
+                                            required
+                                            class="modal-input"
+                                        />Option 3</label
+                                    >
+                                    <label class="modal-button"
+                                        ><input
+                                            type="radio"
+                                            name="options"
+                                            required
+                                            class="modal-input"
+                                        />Option 4</label
+                                    >
+                                </div>
+                                <div
+                                    class="modal-buttons-container modal-buttons-stacked"
+                                >
+                                    <button class="modal-button" type="submit">
+                                        Confirm and proceed
+                                    </button>
+                                    <button class="modal-button" type="submit">
+                                        Go back
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <p class="component-text">
+                        All instructions regarding changing height in above
+                        component are valid here too, read those please. If your
+                        modal needs to have more text in buttons, you can use
+                        this variant instead of above one, where the buttons are
+                        stacked.
+                    </p>
+                    <iframe
+                        src="https://www.thiscodeworks.com/embed/6201098f4dd44f0015f3cde4"
+                        style="height: 39.1rem"
+                        frameborder="0"
+                        class="code-snippet"
+                    ></iframe>
+
+                    <div class="component-nav-container">
+                        <a
+                            href="/Components/Input/input.html"
+                            class="component-nav-link"
+                        >
+                            <i class="material-icons component-nav-arrow">
+                                arrow_left
+                            </i>
+                            <span>Input</span>
+                        </a>
+                        <a
+                            href="/Components/Navigation/navigation.html"
+                            class="component-nav-link"
+                        >
+                            <span>Navigation</span>
+                            <i class="material-icons component-nav-arrow">
+                                arrow_right
+                            </i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
