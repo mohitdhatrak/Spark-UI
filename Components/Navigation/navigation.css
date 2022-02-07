@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+    --navigation-container-border: 1px solid #000;
+    --navigation-bg-color: #bae6fd;
+    --navigation-border: none;
+    --navigation-border-radius: 0;
+    --navigation-icon-color: #000;
+    --navigation-icon-size: 1.6rem;
+    --short-navigation-icon-size: 1.3rem;
+    --navigation-button-hover-color: #7dd3fc;
+    --navigation-link-hover-border-radius: 0.2em;
+    /* focus color is seen when you use tab key to access buttons or links */
+    --navigation-button-focus-outline-color: #000;
+}
+
+.navigation-text-container {
+    overflow-y: auto;
+    height: 100%;
+    border: var(--navigation-container-border);
+}
+
+.navigation {
+    background-color: var(--navigation-bg-color);
+    border: var(--navigation-border);
+    border-radius: var(--navigation-border-radius);
+    padding: 1em;
+    position: relative;
+
+    /* flex - properties */
+    display: flex;
+    gap: 1.5em;
+    align-items: center;
+}
+
+.navigation.navigation-short {
+    padding: 0.6em 1em;
+}
+
+.navigation.navigation-fixed {
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+
+.navigation-button {
+    font-size: 1.3rem;
+    background-color: transparent;
+    border: none;
+    padding: 0.3em;
+    cursor: pointer;
+
+    /* flex - properties */
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.navigation-short .navigation-button {
+    font-size: 1rem;
+}
+
+.navigation-button:hover {
+    background-color: var(--navigation-button-hover-color);
+    border-radius: var(--navigation-link-hover-border-radius);
+}
+
+.navigation-button:focus {
+    outline: var(--navigation-button-focus-outline-color) solid 2px;
+}
+
+.navigation-short
+    .navigation-right-buttons-container
+    .navigation-button:nth-child(1),
+.navigation-short
+    .navigation-right-buttons-container
+    .navigation-button:nth-child(2) {
+    display: none;
+}
+
+.navigation-svg-icons {
+    color: var(--navigation-icon-color);
+    font-size: var(--navigation-icon-size) !important;
+}
+
+.navigation-short .navigation-svg-icons {
+    font-size: var(--short-navigation-icon-size) !important;
+}
+
+.navigation-title {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #000;
+}
+
+.navigation-short .navigation-title {
+    font-size: 1.3rem;
+}
+
+.navigation-right-buttons-container {
+    position: absolute;
+    right: 0.8em;
+
+    /* flex - properties */
+    display: flex;
+    gap: 0.5em;
+}
+
+.navigation-demo-text {
+    margin: 0;
+    padding: 1.2em 1.8em;
+}
