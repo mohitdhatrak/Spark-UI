@@ -93,7 +93,7 @@ body {
     }
 }
 
-@media screen and (min-width: 421px) {
+@media screen and (min-width: 420px) {
     .landing-header-logo {
         display: block;
     }
@@ -299,7 +299,7 @@ body {
     }
 }
 
-@media screen and (min-width: 421px) and (max-width: 857px) {
+@media screen and (min-width: 420px) and (max-width: 857px) {
     .component-content-container {
         width: 100%;
         margin: 0;
@@ -308,7 +308,7 @@ body {
     }
 }
 
-@media screen and (min-width: 858px) and (max-width: 991px) {
+@media screen and (min-width: 857px) and (max-width: 991px) {
     .component-content-container {
         width: 70%;
         margin-left: 1.5em;
