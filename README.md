@@ -3,7 +3,7 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/da4fac26-cf2d-4452-ad9b-332ef2d456b7/deploy-status)](https://app.netlify.com/sites/spark-ui/deploys)
  
 ### About
-An easy to use, highly customizable and responsive UI component library to help you design your apps quickly and efficiently.
+[Spark UI](https://spark-ui.netlify.app/) is an easy to use, highly customizable and responsive UI component library to help you design your apps quickly and efficiently.
 
 ### Few Screenshots:
 
