@@ -17,8 +17,9 @@ HTML, Vanilla CSS
 ### Features
   - All components colors, styles can be easily customized using the given css-variables for them!
   - You can either import css for all components, or you can import css for a component individually too, thus avoiding extra css.
-  - The library as well as all components are responsive.
-  - Appropriate color constrast ratio, website keyboard accessible.
+  - The library as well as all components are fully responsive.
+  - Appropriate color constrast ratio, tested for constrast issues.
+  - All interactive elements are keyboard accessible.
   - Used meta tags with author-name, description, title and keywords.
   - Used semantic HTML tags for better accessibility.
   
