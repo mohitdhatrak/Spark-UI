@@ -3,7 +3,7 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/da4fac26-cf2d-4452-ad9b-332ef2d456b7/deploy-status)](https://app.netlify.com/sites/spark-ui/deploys)
  
 ### About
-An easy to use, highly customizable and responsive UI component library to help you design your apps quickly and efficiently.
+[Spark UI](https://spark-ui.netlify.app/) is an easy to use, highly customizable and responsive UI component library to help you design your apps quickly and efficiently.
 
 ### Few Screenshots:
 
@@ -15,8 +15,13 @@ An easy to use, highly customizable and responsive UI component library to help 
 HTML, Vanilla CSS
 
 ### Features
-  - All components colors, styles can be easily customized using the given css-variables for them! The components are responsive too.
-  - You can either import css for all components, or you can import css for a component individually too thus avoiding extra css.
+  - All components colors, styles can be easily customized using the given css-variables for them!
+  - You can either import css for all components, or you can import css for a component individually too, thus avoiding extra css.
+  - The library as well as all components are fully responsive.
+  - Appropriate color constrast ratio, tested for constrast issues.
+  - All interactive elements are keyboard accessible.
+  - Used meta tags with author-name, description, title and keywords.
+  - Used semantic HTML tags for better accessibility.
   
 ### List of available components - 
 #### 1. Avatar
