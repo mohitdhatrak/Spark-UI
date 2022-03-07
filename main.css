@@ -65,7 +65,8 @@ body {
 }
 
 .landing-header-link:nth-child(2):hover {
-    background-color: var(--header-link-hover-color);
+    /* background-color: var(--header-link-hover-color); */
+    text-decoration: underline;
     border-radius: var(--header-link-hover-border-radius);
 }
 
