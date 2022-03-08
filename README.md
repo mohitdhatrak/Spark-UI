@@ -5,11 +5,7 @@
 ### About
 [Spark UI](https://spark-ui.netlify.app/) is an easy to use, highly customizable and responsive UI component library to help you design your apps quickly and efficiently.
 
-### Few Screenshots:
-
-![image](https://user-images.githubusercontent.com/91209576/154837338-ebe875cd-f05a-49e6-868e-791fed3d87be.png)
-![image](https://user-images.githubusercontent.com/91209576/154837352-a83cbcec-45b9-451c-b2c2-87f0e4211564.png)
-![image](https://user-images.githubusercontent.com/91209576/154837413-ceeeae64-49e6-495d-a57c-75a1f3003e35.png)
+![Spark-UI-gif](https://github.com/mohitdhatrak/Spark-UI/blob/dev/Spark-UI.gif)
 
 ### Tech Stack
 HTML, Vanilla CSS
